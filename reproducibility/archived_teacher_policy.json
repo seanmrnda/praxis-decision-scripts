@@ -1,0 +1,103 @@
+{
+  "arms": [
+    "v1",
+    "control",
+    "v2"
+  ],
+  "weights": {
+    "causal_relation": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "entity_relation": [
+      0.6,
+      0.4,
+      0.0
+    ],
+    "evidence_verdict": [
+      0.3,
+      0.7,
+      0.0
+    ],
+    "temporal_relation": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "selection": {
+    "causal_relation": {
+      "weights": {
+        "v1": 0.0,
+        "control": 0.0,
+        "v2": 1.0
+      },
+      "development": {
+        "examples": 15,
+        "correct": 13,
+        "accuracy": 0.8666666666666667,
+        "macro_f1": 0.7916666666666666,
+        "nll": 0.5691123143387292,
+        "brier": 0.3454605526034108
+      },
+      "trials": 66
+    },
+    "entity_relation": {
+      "weights": {
+        "v1": 0.6,
+        "control": 0.4,
+        "v2": 0.0
+      },
+      "development": {
+        "examples": 240,
+        "correct": 208,
+        "accuracy": 0.8666666666666667,
+        "macro_f1": 0.8039063800069493,
+        "nll": 0.33010994543019306,
+        "brier": 0.18347775304214287
+      },
+      "trials": 66
+    },
+    "evidence_verdict": {
+      "weights": {
+        "v1": 0.3,
+        "control": 0.7,
+        "v2": 0.0
+      },
+      "development": {
+        "examples": 240,
+        "correct": 144,
+        "accuracy": 0.6,
+        "macro_f1": 0.5957168975757813,
+        "nll": 0.8374000653249175,
+        "brier": 0.5087828742818353
+      },
+      "trials": 66
+    },
+    "temporal_relation": {
+      "weights": {
+        "v1": 0.0,
+        "control": 0.0,
+        "v2": 1.0
+      },
+      "development": {
+        "examples": 225,
+        "correct": 183,
+        "accuracy": 0.8133333333333334,
+        "macro_f1": 0.447029822029822,
+        "nll": 0.5445121139062036,
+        "brier": 0.2897205979247443
+      },
+      "trials": 66
+    }
+  },
+  "objective": "development NLL",
+  "grid": 10,
+  "routing_feature": "task supplied by application",
+  "development_sha256": {
+    "v1": "4a4e9cf80992ac2ee080eae86d6538b494458fdb1e37d039654f8153de7fedb0",
+    "control": "b684be76a142a66bb80747259e1da5ebf05ff288ff50c048401cc8cbc4e52e2d",
+    "v2": "59692da1dbce464c93ccca74a40752486a6c37babc1c362b48efd42cbfb4eb40"
+  }
+}

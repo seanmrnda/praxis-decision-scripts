@@ -1,0 +1,6 @@
+torch>=2.6
+transformers==5.17.0
+safetensors>=0.5
+huggingface-hub>=1.0
+
+requests>=2.32

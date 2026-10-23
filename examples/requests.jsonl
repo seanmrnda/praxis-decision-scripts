@@ -1,0 +1,3 @@
+{"id":"route","state":{"message":"I paid twice for the same subscription."},"question":"Which team should handle this ticket?","type":"choice","options":{"billing":"Payments, charges and invoices","technical":"Software errors and connectivity"}}
+{"id":"refund","state":"Please return the money for this order.","question":"Does this message request a refund?","type":"noul"}
+{"id":"urgency","state":"The production service has been offline for an hour.","question":"How urgent is the incident?","type":"score","levels":[{"value":0,"description":"No action needed"},{"value":1,"description":"Routine follow-up"},{"value":2,"description":"Immediate attention"}]}

@@ -1,0 +1,74 @@
+{
+  "v1": {
+    "files": {
+      "train.jsonl": {
+        "sha256": "1b9f4b6f8b1d4c620f5f82de2725c7ae051b00253a40d687cf89d170adb6496c",
+        "rows": 6000
+      },
+      "validation.jsonl": {
+        "sha256": "7f0a836aefb429cba1595122b2c9aea13605e6dfd886e3466fae935081c68918",
+        "rows": 720
+      },
+      "calibration.jsonl": {
+        "sha256": "ef40c2917c6c0ac4c6061cf231fbee55b5dbfa94a20221c09247804868501c7c",
+        "rows": 360
+      },
+      "test.jsonl": {
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2",
+        "rows": 720
+      }
+    }
+  },
+  "v2": {
+    "files": {
+      "train.jsonl": {
+        "sha256": "175c10845fe704de0dab04b680ee721016737b9716413bba6c8341de5edb16f8",
+        "rows": 8000
+      },
+      "validation.jsonl": {
+        "sha256": "5a558a62ffb866be32d9391393fe6f621bdf3242864f2a3874de2b66630d30e3",
+        "rows": 720
+      },
+      "calibration.jsonl": {
+        "sha256": "97f550ebec638a6a9f4034d30779fc2e3288816b22976087593e61ba9c9be300",
+        "rows": 360
+      },
+      "test.jsonl": {
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2",
+        "rows": 720
+      },
+      "confirmation.jsonl": {
+        "sha256": "d6a5cd578ee316247a90db040bef39579d9abc3235052c44661570adb037e7ed",
+        "rows": 360
+      }
+    }
+  },
+  "v3": {
+    "files": {
+      "train.jsonl": {
+        "sha256": "175c10845fe704de0dab04b680ee721016737b9716413bba6c8341de5edb16f8",
+        "rows": 8000
+      },
+      "validation.jsonl": {
+        "sha256": "5a558a62ffb866be32d9391393fe6f621bdf3242864f2a3874de2b66630d30e3",
+        "rows": 720
+      },
+      "calibration.jsonl": {
+        "sha256": "97f550ebec638a6a9f4034d30779fc2e3288816b22976087593e61ba9c9be300",
+        "rows": 360
+      },
+      "test.jsonl": {
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2",
+        "rows": 720
+      },
+      "confirmation.jsonl": {
+        "sha256": "d6a5cd578ee316247a90db040bef39579d9abc3235052c44661570adb037e7ed",
+        "rows": 360
+      },
+      "fresh.jsonl": {
+        "sha256": "abcd227ccabbc87c814e9b01d3ef19146c640d14ec2f7ef23f9d158e8d233693",
+        "rows": 600
+      }
+    }
+  }
+}

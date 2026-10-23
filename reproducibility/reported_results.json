@@ -1,0 +1,3184 @@
+{
+  "scope": "Original Julia-1 conversion and Defense Praxis v1-v3; no later Praxis-v3 typed-decision experiment.",
+  "arms": {
+    "dense": {
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.29499998688697815,
+          "macro_f1": 0.2833248886561552,
+          "balanced_accuracy": 0.4278121720978864,
+          "nll": 6.020944118499756,
+          "brier": 1.2744379043579102,
+          "ece": 0.5973235329361424,
+          "correct": 177,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.05000000074505806,
+          "macro_f1": 0.08193394450237515,
+          "balanced_accuracy": 0.36234567901234566,
+          "nll": 8.762214660644531,
+          "brier": 1.7329277992248535,
+          "ece": 0.8295513654289473
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.2857142984867096,
+          "macro_f1": 0.2857142857142857,
+          "balanced_accuracy": 0.5833333333333334,
+          "nll": 4.861403465270996,
+          "brier": 1.3560349941253662,
+          "ece": 0.6916260719281713
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.032258063554763794,
+          "macro_f1": 0.014007164098404974,
+          "balanced_accuracy": 0.2518518518518518,
+          "nll": 9.05582332611084,
+          "brier": 1.7612959146499634,
+          "ece": 0.839932821437952
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.47999998927116394,
+          "macro_f1": 0.30753885089798405,
+          "balanced_accuracy": 0.43889799955373726,
+          "nll": 2.064260482788086,
+          "brier": 0.804796576499939,
+          "ece": 0.31974652468964304
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.47999998927116394,
+          "macro_f1": 0.30753885089798405,
+          "balanced_accuracy": 0.43889799955373726,
+          "nll": 2.064260482788086,
+          "brier": 0.804796576499939,
+          "ece": 0.31974652468964304
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.35499998927116394,
+          "macro_f1": 0.17466174661746617,
+          "balanced_accuracy": 0.3333333333333333,
+          "nll": 7.236358642578125,
+          "brier": 1.2855894565582275,
+          "ece": 0.6437499227531898
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.35499998927116394,
+          "macro_f1": 0.17466174661746617,
+          "balanced_accuracy": 0.3333333333333333,
+          "nll": 7.236358642578125,
+          "brier": 1.2855894565582275,
+          "ece": 0.6437499227531898
+        }
+      }
+    },
+    "v1": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.6527777910232544,
+          "macro_f1": 0.6570884318042922,
+          "balanced_accuracy": 0.8208271854007128,
+          "nll": 0.8078171014785767,
+          "brier": 0.4491661787033081,
+          "ece": 0.036649908829467226,
+          "correct": 470,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.612500011920929,
+          "macro_f1": 0.6043499543899714,
+          "balanced_accuracy": 0.6039277795375356,
+          "nll": 0.8522393703460693,
+          "brier": 0.5076655149459839,
+          "ece": 0.04372283546296685
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.612500011920929,
+          "macro_f1": 0.6043499543899714,
+          "balanced_accuracy": 0.6039277795375356,
+          "nll": 0.8522393703460693,
+          "brier": 0.5076655149459839,
+          "ece": 0.04372283546296685
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.6794535426114374,
+          "balanced_accuracy": 0.8577369413892103,
+          "nll": 0.33472740650177,
+          "brier": 0.1681714653968811,
+          "ece": 0.0479487520700788
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.6794535426114374,
+          "balanced_accuracy": 0.8577369413892103,
+          "nll": 0.33472740650177,
+          "brier": 0.1681714653968811,
+          "ece": 0.0479487520700788
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.4541666805744171,
+          "macro_f1": 0.4076213038899958,
+          "balanced_accuracy": 0.5663309544454078,
+          "nll": 1.2364842891693115,
+          "brier": 0.6716615557670593,
+          "ece": 0.09029875788270816
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.4375,
+          "macro_f1": 0.2682947009330329,
+          "balanced_accuracy": 0.46313279530447543,
+          "nll": 1.282190203666687,
+          "brier": 0.6902388334274292,
+          "ece": 0.0880324097328625
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6862745098039216,
+          "balanced_accuracy": 0.7727272727272727,
+          "nll": 0.5966029763221741,
+          "brier": 0.41157978773117065,
+          "ece": 0.180494025349617
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.5888888835906982,
+          "macro_f1": 0.6601172939656091,
+          "balanced_accuracy": 0.7813832616536229,
+          "nll": 0.8168460130691528,
+          "brier": 0.4563477039337158,
+          "ece": 0.07217614313628301,
+          "correct": 212,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.3166666626930237,
+          "macro_f1": 0.32718425740738116,
+          "balanced_accuracy": 0.5338535164377861,
+          "nll": 1.275871992111206,
+          "brier": 0.6876012086868286,
+          "ece": 0.07982453854464788
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.2752293646335602,
+          "macro_f1": 0.18489403316989522,
+          "balanced_accuracy": 0.3757802746566792,
+          "nll": 1.3568353652954102,
+          "brier": 0.7262018918991089,
+          "ece": 0.07516248673087578
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.7272727489471436,
+          "macro_f1": 0.611764705882353,
+          "balanced_accuracy": 0.85,
+          "nll": 0.4735996127128601,
+          "brier": 0.30510368943214417,
+          "ece": 0.126021177623036
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.875,
+          "macro_f1": 0.7042986425339367,
+          "balanced_accuracy": 0.8299935358758888,
+          "nll": 0.37122437357902527,
+          "brier": 0.19510507583618164,
+          "ece": 0.06264872809285488
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.875,
+          "macro_f1": 0.7042986425339367,
+          "balanced_accuracy": 0.8299935358758888,
+          "nll": 0.37122437357902527,
+          "brier": 0.19510507583618164,
+          "ece": 0.06264872809285488
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.574999988079071,
+          "macro_f1": 0.560173325231054,
+          "balanced_accuracy": 0.5634920634920635,
+          "nll": 0.80344158411026,
+          "brier": 0.4863368272781372,
+          "ece": 0.09016137610345343
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.574999988079071,
+          "macro_f1": 0.560173325231054,
+          "balanced_accuracy": 0.5634920634920635,
+          "nll": 0.80344158411026,
+          "brier": 0.4863368272781372,
+          "ece": 0.09016137610345343
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.5616666674613953,
+          "macro_f1": 0.6660090435077943,
+          "balanced_accuracy": 0.7773745060747073,
+          "nll": 0.9100834131240845,
+          "brier": 0.5044252872467041,
+          "ece": 0.0714134991955877,
+          "correct": 337,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.27000001072883606,
+          "macro_f1": 0.3363969717691162,
+          "balanced_accuracy": 0.3419753086419753,
+          "nll": 1.3789279460906982,
+          "brier": 0.7407070994377136,
+          "ece": 0.11909167949607036
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.7857142686843872,
+          "macro_f1": 0.6347826086956522,
+          "balanced_accuracy": 0.6666666666666667,
+          "nll": 0.5151170492172241,
+          "brier": 0.3402884304523468,
+          "ece": 0.12355941800287429
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.23118279874324799,
+          "macro_f1": 0.18720415330584822,
+          "balanced_accuracy": 0.17962962962962964,
+          "nll": 1.4439458847045898,
+          "brier": 0.7708461880683899,
+          "ece": 0.12414055531872481
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.8450000286102295,
+          "macro_f1": 0.6985056388795711,
+          "balanced_accuracy": 0.8312353230386018,
+          "nll": 0.42970192432403564,
+          "brier": 0.2199462652206421,
+          "ece": 0.06676975358613463
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.8450000286102295,
+          "macro_f1": 0.6985056388795711,
+          "balanced_accuracy": 0.8312353230386018,
+          "nll": 0.42970192432403564,
+          "brier": 0.2199462652206421,
+          "ece": 0.06676975358613463
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.5699999928474426,
+          "macro_f1": 0.5561470965197673,
+          "balanced_accuracy": 0.5530029560076509,
+          "nll": 0.9216203093528748,
+          "brier": 0.5526224374771118,
+          "ece": 0.04351454450146652
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.5699999928474426,
+          "macro_f1": 0.5561470965197673,
+          "balanced_accuracy": 0.5530029560076509,
+          "nll": 0.9216203093528748,
+          "brier": 0.5526224374771118,
+          "ece": 0.04351454450146652
+        }
+      }
+    },
+    "teacher_a": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.6736111044883728,
+          "macro_f1": 0.6903173388100589,
+          "balanced_accuracy": 0.8552162640183181,
+          "nll": 0.7817436456680298,
+          "brier": 0.4213424623012543,
+          "ece": 0.03954814059261322,
+          "correct": 485,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6208333373069763,
+          "macro_f1": 0.6145999960844334,
+          "balanced_accuracy": 0.6131823461091753,
+          "nll": 0.8026931881904602,
+          "brier": 0.4804622530937195,
+          "ece": 0.03220858741422433
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6208333373069763,
+          "macro_f1": 0.6145999960844334,
+          "balanced_accuracy": 0.6131823461091753,
+          "nll": 0.8026931881904602,
+          "brier": 0.4804622530937195,
+          "ece": 0.03220858741422433
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8958333134651184,
+          "macro_f1": 0.711260722299973,
+          "balanced_accuracy": 0.8846041647435852,
+          "nll": 0.3434202969074249,
+          "brier": 0.1681617945432663,
+          "ece": 0.05516778904030181
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8958333134651184,
+          "macro_f1": 0.711260722299973,
+          "balanced_accuracy": 0.8846041647435852,
+          "nll": 0.3434202969074249,
+          "brier": 0.1681617945432663,
+          "ece": 0.05516778904030181
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.5041666626930237,
+          "macro_f1": 0.4698742804639315,
+          "balanced_accuracy": 0.6872521991744295,
+          "nll": 1.1991175413131714,
+          "brier": 0.6154033541679382,
+          "ece": 0.07389523071219783
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.4776785671710968,
+          "macro_f1": 0.2714780873625639,
+          "balanced_accuracy": 0.5763328442161898,
+          "nll": 1.252991795539856,
+          "brier": 0.6400910019874573,
+          "ece": 0.07363665227073535
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.875,
+          "macro_f1": 0.8666666666666667,
+          "balanced_accuracy": 0.9090909090909092,
+          "nll": 0.4448773264884949,
+          "brier": 0.26977717876434326,
+          "ece": 0.20451734960079193
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.605555534362793,
+          "macro_f1": 0.6122735624647501,
+          "balanced_accuracy": 0.7570102575583376,
+          "nll": 0.8766170144081116,
+          "brier": 0.47318652272224426,
+          "ece": 0.0655784220922046,
+          "correct": 218,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.32499998807907104,
+          "macro_f1": 0.3209050887622316,
+          "balanced_accuracy": 0.5652517686225551,
+          "nll": 1.4471917152404785,
+          "brier": 0.7467387914657593,
+          "ece": 0.12346713352430971
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.29357796907424927,
+          "macro_f1": 0.2105242998100141,
+          "balanced_accuracy": 0.4478776529338327,
+          "nll": 1.5324947834014893,
+          "brier": 0.7794206142425537,
+          "ece": 0.11563709820309587
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.6363636255264282,
+          "macro_f1": 0.5416666666666666,
+          "balanced_accuracy": 0.8,
+          "nll": 0.6019170880317688,
+          "brier": 0.42289191484451294,
+          "ece": 0.20358902280839786
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6427397221514868,
+          "balanced_accuracy": 0.7907619341442871,
+          "nll": 0.4015393555164337,
+          "brier": 0.2152169644832611,
+          "ece": 0.083195503049739
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6427397221514868,
+          "balanced_accuracy": 0.7907619341442871,
+          "nll": 0.4015393555164337,
+          "brier": 0.2152169644832611,
+          "ece": 0.083195503049739
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.6499999761581421,
+          "macro_f1": 0.6466196355085244,
+          "balanced_accuracy": 0.6455026455026455,
+          "nll": 0.7811197638511658,
+          "brier": 0.4576038420200348,
+          "ece": 0.062170750609215286
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.6499999761581421,
+          "macro_f1": 0.6466196355085244,
+          "balanced_accuracy": 0.6455026455026455,
+          "nll": 0.7811197638511658,
+          "brier": 0.4576038420200348,
+          "ece": 0.062170750609215286
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.5983333587646484,
+          "macro_f1": 0.7089979356175627,
+          "balanced_accuracy": 0.8085236000064974,
+          "nll": 0.9205785393714905,
+          "brier": 0.4988817870616913,
+          "ece": 0.05196033320987237,
+          "correct": 359,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.33000001311302185,
+          "macro_f1": 0.3277432712215321,
+          "balanced_accuracy": 0.42530864197530865,
+          "nll": 1.4584035873413086,
+          "brier": 0.7482225298881531,
+          "ece": 0.07812000634323601
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.6428571343421936,
+          "macro_f1": 0.5238095238095237,
+          "balanced_accuracy": 0.5833333333333333,
+          "nll": 0.6230341196060181,
+          "brier": 0.4381926357746124,
+          "ece": 0.1623023893914768
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.30645161867141724,
+          "macro_f1": 0.22971014492753622,
+          "balanced_accuracy": 0.34629629629629627,
+          "nll": 1.5212808847427368,
+          "brier": 0.7715581059455872,
+          "ece": 0.07178369515018246
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.8600000143051147,
+          "macro_f1": 0.7471741229041622,
+          "balanced_accuracy": 0.8569368282483036,
+          "nll": 0.4477567970752716,
+          "brier": 0.22598302364349365,
+          "ece": 0.06850663173265034
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.8600000143051147,
+          "macro_f1": 0.7471741229041622,
+          "balanced_accuracy": 0.8569368282483036,
+          "nll": 0.4477567970752716,
+          "brier": 0.22598302364349365,
+          "ece": 0.06850663173265034
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.6050000190734863,
+          "macro_f1": 0.5934549568178362,
+          "balanced_accuracy": 0.5905512084854808,
+          "nll": 0.8555747270584106,
+          "brier": 0.5224398970603943,
+          "ece": 0.05859014189190964
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.6050000190734863,
+          "macro_f1": 0.5934549568178362,
+          "balanced_accuracy": 0.5905512084854808,
+          "nll": 0.8555747270584106,
+          "brier": 0.5224398970603943,
+          "ece": 0.05859014189190964
+        }
+      }
+    },
+    "v2": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7638888955116272,
+          "macro_f1": 0.6904411440592318,
+          "balanced_accuracy": 0.8486667392144513,
+          "nll": 0.5860506296157837,
+          "brier": 0.32688087224960327,
+          "ece": 0.03853067755602813,
+          "correct": 550,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6291666626930237,
+          "macro_f1": 0.632165190246522,
+          "balanced_accuracy": 0.6325889557596874,
+          "nll": 0.8352493047714233,
+          "brier": 0.49423471093177795,
+          "ece": 0.040231148456215796
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6291666626930237,
+          "macro_f1": 0.632165190246522,
+          "balanced_accuracy": 0.6325889557596874,
+          "nll": 0.8352493047714233,
+          "brier": 0.49423471093177795,
+          "ece": 0.040231148456215796
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8708333373069763,
+          "macro_f1": 0.7140913330941826,
+          "balanced_accuracy": 0.902214166976332,
+          "nll": 0.3782936632633209,
+          "brier": 0.18907828629016876,
+          "ece": 0.0538420780976942
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8708333373069763,
+          "macro_f1": 0.7140913330941826,
+          "balanced_accuracy": 0.902214166976332,
+          "nll": 0.3782936632633209,
+          "brier": 0.18907828629016876,
+          "ece": 0.0538420780976942
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.7916666865348816,
+          "macro_f1": 0.4318351543736872,
+          "balanced_accuracy": 0.430155924616673,
+          "nll": 0.5446088314056396,
+          "brier": 0.2973296344280243,
+          "ece": 0.06655582109899257
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.7946428656578064,
+          "macro_f1": 0.2932072770150762,
+          "balanced_accuracy": 0.2906884323795549,
+          "nll": 0.5459059476852417,
+          "brier": 0.2919428050518036,
+          "ece": 0.0687897283268002
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.75,
+          "macro_f1": 0.7090909090909091,
+          "balanced_accuracy": 0.7090909090909091,
+          "nll": 0.5264492630958557,
+          "brier": 0.3727451264858246,
+          "ece": 0.2961265482008457
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.7972221970558167,
+          "macro_f1": 0.6172057893285545,
+          "balanced_accuracy": 0.7308370726295879,
+          "nll": 0.5600893497467041,
+          "brier": 0.3183121979236603,
+          "ece": 0.062158542907132075,
+          "correct": 287,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.4190411796902669,
+          "balanced_accuracy": 0.41479400749063666,
+          "nll": 0.4326605498790741,
+          "brier": 0.2245236039161682,
+          "ece": 0.1534880441359816
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.8899082541465759,
+          "macro_f1": 0.3904665314401623,
+          "balanced_accuracy": 0.37219101123595505,
+          "nll": 0.44464513659477234,
+          "brier": 0.22832037508487701,
+          "ece": 0.15363759081975203
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.9090909361839294,
+          "macro_f1": 0.47619047619047616,
+          "balanced_accuracy": 0.5,
+          "nll": 0.3139040768146515,
+          "brier": 0.18690095841884613,
+          "ece": 0.15200670651976012
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.824999988079071,
+          "macro_f1": 0.6362677066009061,
+          "balanced_accuracy": 0.7775876084699614,
+          "nll": 0.4613043963909149,
+          "brier": 0.2546178996562958,
+          "ece": 0.07613348942132067
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.824999988079071,
+          "macro_f1": 0.6362677066009061,
+          "balanced_accuracy": 0.7775876084699614,
+          "nll": 0.4613043963909149,
+          "brier": 0.2546178996562958,
+          "ece": 0.07613348942132067
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.675000011920929,
+          "macro_f1": 0.6767744701269178,
+          "balanced_accuracy": 0.6772486772486772,
+          "nll": 0.7863031029701233,
+          "brier": 0.475795179605484,
+          "ece": 0.0804406135578673
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.675000011920929,
+          "macro_f1": 0.6767744701269178,
+          "balanced_accuracy": 0.6772486772486772,
+          "nll": 0.7863031029701233,
+          "brier": 0.475795179605484,
+          "ece": 0.0804406135578673
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.7183333039283752,
+          "macro_f1": 0.670692620846094,
+          "balanced_accuracy": 0.8075758827106916,
+          "nll": 0.6967574954032898,
+          "brier": 0.39289963245391846,
+          "ece": 0.03567238907126399,
+          "correct": 431,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.8149999976158142,
+          "macro_f1": 0.4002055269178557,
+          "balanced_accuracy": 0.40740740740740744,
+          "nll": 0.5636615753173828,
+          "brier": 0.2989715337753296,
+          "ece": 0.10695536748602397
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.8571428656578064,
+          "macro_f1": 0.46153846153846156,
+          "balanced_accuracy": 0.5,
+          "nll": 0.41078537702560425,
+          "brier": 0.25284597277641296,
+          "ece": 0.1463052020587403
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.8118279576301575,
+          "macro_f1": 0.36953905960755273,
+          "balanced_accuracy": 0.3611111111111111,
+          "nll": 0.5751684308052063,
+          "brier": 0.30244335532188416,
+          "ece": 0.1115929528840982
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.8199999928474426,
+          "macro_f1": 0.6991820385864218,
+          "balanced_accuracy": 0.8608305985355166,
+          "nll": 0.5376249551773071,
+          "brier": 0.2811357080936432,
+          "ece": 0.07229739268410079
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.8199999928474426,
+          "macro_f1": 0.6991820385864218,
+          "balanced_accuracy": 0.8608305985355166,
+          "nll": 0.5376249551773071,
+          "brier": 0.2811357080936432,
+          "ece": 0.07229739268410079
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.5199999809265137,
+          "macro_f1": 0.5279207829347053,
+          "balanced_accuracy": 0.5250669448791515,
+          "nll": 0.9889858961105347,
+          "brier": 0.5985916256904602,
+          "ece": 0.11567101585189146
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.5199999809265137,
+          "macro_f1": 0.5279207829347053,
+          "balanced_accuracy": 0.5250669448791515,
+          "nll": 0.9889858961105347,
+          "brier": 0.5985916256904602,
+          "ece": 0.11567101585189146
+        }
+      }
+    },
+    "committee": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7847222222222222,
+          "macro_f1": 0.705558699552269,
+          "nll": 0.5557772634334871,
+          "brier": 0.311741831744549,
+          "correct": 565,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6541666666666667,
+          "macro_f1": 0.6492207761518513,
+          "nll": 0.7974461750076948,
+          "brier": 0.4754577710944136
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6541666666666667,
+          "macro_f1": 0.6492207761518513,
+          "nll": 0.7974461750076948,
+          "brier": 0.4754577710944136
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.9083333333333333,
+          "macro_f1": 0.7307164084588349,
+          "nll": 0.32527672603789237,
+          "brier": 0.16243808032560644
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.9083333333333333,
+          "macro_f1": 0.7307164084588349,
+          "nll": 0.32527672603789237,
+          "brier": 0.16243808032560644
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.7916666666666666,
+          "macro_f1": 0.4318351543736872,
+          "nll": 0.5446088892548742,
+          "brier": 0.2973296438136264
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.7946428571428571,
+          "macro_f1": 0.2932072770150762,
+          "nll": 0.5459060054696331,
+          "brier": 0.29194282284537293
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.75,
+          "macro_f1": 0.7090909090909091,
+          "nll": 0.5264492622482481,
+          "brier": 0.37274513736917797
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.8027777777777778,
+          "macro_f1": 0.6381721039371204,
+          "nll": 0.5235583250078322,
+          "brier": 0.29246251071247154,
+          "correct": 289,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.8916666666666667,
+          "macro_f1": 0.4190411796902669,
+          "nll": 0.432660536052122,
+          "brier": 0.22452359719552334
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.8899082568807339,
+          "macro_f1": 0.3904665314401623,
+          "nll": 0.44464513216024926,
+          "brier": 0.22832037831327873
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.9090909090909091,
+          "macro_f1": 0.47619047619047616,
+          "nll": 0.3139040837079522,
+          "brier": 0.18690094793776565
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.8583333333333333,
+          "macro_f1": 0.662079171291158,
+          "nll": 0.36647026538069455,
+          "brier": 0.19700605225159065
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.8583333333333333,
+          "macro_f1": 0.662079171291158,
+          "nll": 0.36647026538069455,
+          "brier": 0.19700605225159065
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.6583333333333333,
+          "macro_f1": 0.6540757625094975,
+          "nll": 0.7715441735906803,
+          "brier": 0.45585788269030086
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.6583333333333333,
+          "macro_f1": 0.6540757625094975,
+          "nll": 0.7715441735906803,
+          "brier": 0.45585788269030086
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.7633333333333333,
+          "macro_f1": 0.7175658390235353,
+          "nll": 0.6111947070842868,
+          "brier": 0.34405601115598416,
+          "correct": 458,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.815,
+          "macro_f1": 0.4002055269178557,
+          "nll": 0.5636616054919267,
+          "brier": 0.29897151094624463
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.8571428571428571,
+          "macro_f1": 0.46153846153846156,
+          "nll": 0.4107853952432569,
+          "brier": 0.2528459867518709
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.8118279569892473,
+          "macro_f1": 0.36953905960755273,
+          "nll": 0.5751684170160203,
+          "brier": 0.3024433245952835
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.865,
+          "macro_f1": 0.7504831582848089,
+          "nll": 0.4141946809333637,
+          "brier": 0.21399008281245796
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.865,
+          "macro_f1": 0.7504831582848089,
+          "nll": 0.4141946809333637,
+          "brier": 0.21399008281245796
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.61,
+          "macro_f1": 0.5951881202256014,
+          "nll": 0.855727834827572,
+          "brier": 0.5192064397092492
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.61,
+          "macro_f1": 0.5951881202256014,
+          "nll": 0.855727834827572,
+          "brier": 0.5192064397092492
+        }
+      }
+    },
+    "control": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7638888955116272,
+          "macro_f1": 0.6611264380478302,
+          "balanced_accuracy": 0.8181265137477324,
+          "nll": 0.6168278455734253,
+          "brier": 0.3372839093208313,
+          "ece": 0.03845401493859818,
+          "correct": 550,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.637499988079071,
+          "macro_f1": 0.6239745121465551,
+          "balanced_accuracy": 0.6254038644282547,
+          "nll": 0.8209174871444702,
+          "brier": 0.4879603683948517,
+          "ece": 0.03726304211261172
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.637499988079071,
+          "macro_f1": 0.6239745121465551,
+          "balanced_accuracy": 0.6254038644282547,
+          "nll": 0.8209174871444702,
+          "brier": 0.4879603683948517,
+          "ece": 0.03726304211261172
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8666666746139526,
+          "macro_f1": 0.6816249164798192,
+          "balanced_accuracy": 0.866146961294583,
+          "nll": 0.4107350707054138,
+          "brier": 0.20696990191936493,
+          "ece": 0.05767908558486759
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8666666746139526,
+          "macro_f1": 0.6816249164798192,
+          "balanced_accuracy": 0.866146961294583,
+          "nll": 0.4107350707054138,
+          "brier": 0.20696990191936493,
+          "ece": 0.05767908558486759
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.7875000238418579,
+          "macro_f1": 0.43030424674260287,
+          "balanced_accuracy": 0.44228677086344,
+          "nll": 0.6188309192657471,
+          "brier": 0.3169214129447937,
+          "ece": 0.08436863602831125
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.7991071343421936,
+          "macro_f1": 0.33593256059009485,
+          "balanced_accuracy": 0.3270665199315236,
+          "nll": 0.6253110766410828,
+          "brier": 0.31435680389404297,
+          "ece": 0.09102302585258278
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.625,
+          "macro_f1": 0.6190476190476191,
+          "balanced_accuracy": 0.6727272727272727,
+          "nll": 0.5281094908714294,
+          "brier": 0.3528260588645935,
+          "ece": 0.17134487628936768
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.7972221970558167,
+          "macro_f1": 0.6445261355884179,
+          "balanced_accuracy": 0.7757922937280455,
+          "nll": 0.5436610579490662,
+          "brier": 0.2973700761795044,
+          "ece": 0.05665316696495558,
+          "correct": 287,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.8833333253860474,
+          "macro_f1": 0.5803675702255824,
+          "balanced_accuracy": 0.5703287557220141,
+          "nll": 0.4279952347278595,
+          "brier": 0.20787400007247925,
+          "ece": 0.13212001279631158
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.8715596199035645,
+          "macro_f1": 0.3705513553383736,
+          "balanced_accuracy": 0.3554931335830212,
+          "nll": 0.43802398443222046,
+          "brier": 0.20985843241214752,
+          "ece": 0.11889235045337765
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "nll": 0.32861945033073425,
+          "brier": 0.18820996582508087,
+          "ece": 0.26319416787173466
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6515259161515845,
+          "balanced_accuracy": 0.8121523084758379,
+          "nll": 0.44862908124923706,
+          "brier": 0.23352135717868805,
+          "ece": 0.08998061865762444
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6515259161515845,
+          "balanced_accuracy": 0.8121523084758379,
+          "nll": 0.44862908124923706,
+          "brier": 0.23352135717868805,
+          "ece": 0.08998061865762444
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.6666666865348816,
+          "macro_f1": 0.6445139559893659,
+          "balanced_accuracy": 0.6534391534391534,
+          "nll": 0.7543590068817139,
+          "brier": 0.45071491599082947,
+          "ece": 0.06949079371585304
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.6666666865348816,
+          "macro_f1": 0.6445139559893659,
+          "balanced_accuracy": 0.6534391534391534,
+          "nll": 0.7543590068817139,
+          "brier": 0.45071491599082947,
+          "ece": 0.06949079371585304
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.7316666841506958,
+          "macro_f1": 0.707999614030417,
+          "balanced_accuracy": 0.8077305383723895,
+          "nll": 0.6620258688926697,
+          "brier": 0.36761274933815,
+          "ece": 0.04454703935518706,
+          "correct": 439,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.7900000214576721,
+          "macro_f1": 0.3892917478882391,
+          "balanced_accuracy": 0.39351851851851855,
+          "nll": 0.635933518409729,
+          "brier": 0.3385036587715149,
+          "ece": 0.07390758967409605
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.7857142686843872,
+          "macro_f1": 0.44,
+          "balanced_accuracy": 0.4583333333333333,
+          "nll": 0.5074164271354675,
+          "brier": 0.3386557996273041,
+          "ece": 0.14036798912887516
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.7903226017951965,
+          "macro_f1": 0.36393762183235867,
+          "balanced_accuracy": 0.3611111111111111,
+          "nll": 0.6456068754196167,
+          "brier": 0.338492214679718,
+          "ece": 0.07964810493735741
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.8500000238418579,
+          "macro_f1": 0.7428159619025531,
+          "balanced_accuracy": 0.8620564145154309,
+          "nll": 0.4752002954483032,
+          "brier": 0.23302863538265228,
+          "ece": 0.06530105936890934
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.8500000238418579,
+          "macro_f1": 0.7428159619025531,
+          "balanced_accuracy": 0.8620564145154309,
+          "nll": 0.4752002954483032,
+          "brier": 0.23302863538265228,
+          "ece": 0.06530105936890934
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.5550000071525574,
+          "macro_f1": 0.5330338959649304,
+          "balanced_accuracy": 0.5315284298382891,
+          "nll": 0.8749436140060425,
+          "brier": 0.5313060283660889,
+          "ece": 0.0854009597066524
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.5550000071525574,
+          "macro_f1": 0.5330338959649304,
+          "balanced_accuracy": 0.5315284298382891,
+          "nll": 0.8749436140060425,
+          "brier": 0.5313060283660889,
+          "ece": 0.0854009597066524
+        }
+      },
+      "development": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.762499988079071,
+          "macro_f1": 0.7270334572365014,
+          "balanced_accuracy": 0.8430138359908657,
+          "nll": 0.6116810441017151,
+          "brier": 0.34254929423332214,
+          "ece": 0.03381678474221794,
+          "correct": 549,
+          "source_groups": 554
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.625,
+          "macro_f1": 0.6154015790582074,
+          "balanced_accuracy": 0.6180637968856763,
+          "nll": 0.8619938492774963,
+          "brier": 0.5160461664199829,
+          "ece": 0.05111403131768233
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.625,
+          "macro_f1": 0.6154015790582074,
+          "balanced_accuracy": 0.6180637968856763,
+          "nll": 0.8619938492774963,
+          "brier": 0.5160461664199829,
+          "ece": 0.05111403131768233
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.7445023914400515,
+          "balanced_accuracy": 0.8799051280394564,
+          "nll": 0.43047505617141724,
+          "brier": 0.23499201238155365,
+          "ece": 0.06680770373533651
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.7445023914400515,
+          "balanced_accuracy": 0.8799051280394564,
+          "nll": 0.43047505617141724,
+          "brier": 0.23499201238155365,
+          "ece": 0.06680770373533651
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.8208333253860474,
+          "macro_f1": 0.5586647407134223,
+          "balanced_accuracy": 0.5435360943341961,
+          "nll": 0.5425742864608765,
+          "brier": 0.27660974860191345,
+          "ece": 0.08949892156454875
+        },
+        "task:temporal_relation": {
+          "examples": 225,
+          "accuracy": 0.8266666531562805,
+          "macro_f1": 0.5084516565246788,
+          "balanced_accuracy": 0.4611374748346275,
+          "nll": 0.5408434271812439,
+          "brier": 0.2719134986400604,
+          "ece": 0.09044566562989109
+        },
+        "task:causal_relation": {
+          "examples": 15,
+          "accuracy": 0.7333333492279053,
+          "macro_f1": 0.6590909090909092,
+          "balanced_accuracy": 0.7083333333333333,
+          "nll": 0.5685378909111023,
+          "brier": 0.34705397486686707,
+          "ece": 0.19376652395740868
+        }
+      }
+    },
+    "v3": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7916666865348816,
+          "macro_f1": 0.71616873315999,
+          "balanced_accuracy": 0.8533574681384734,
+          "nll": 0.5664746761322021,
+          "brier": 0.31178030371665955,
+          "ece": 0.04638756715867706,
+          "correct": 570,
+          "source_groups": 607
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6583333611488342,
+          "macro_f1": 0.6556684967550842,
+          "balanced_accuracy": 0.6547803822194066,
+          "nll": 0.8158441781997681,
+          "brier": 0.47974681854248047,
+          "ece": 0.06609299496106857
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6583333611488342,
+          "macro_f1": 0.6556684967550842,
+          "balanced_accuracy": 0.6547803822194066,
+          "nll": 0.8158441781997681,
+          "brier": 0.47974681854248047,
+          "ece": 0.06609299496106857
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.9041666388511658,
+          "macro_f1": 0.7372065312854787,
+          "balanced_accuracy": 0.900080473563251,
+          "nll": 0.336059033870697,
+          "brier": 0.16319799423217773,
+          "ece": 0.05695703013771043
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.9041666388511658,
+          "macro_f1": 0.7372065312854787,
+          "balanced_accuracy": 0.900080473563251,
+          "nll": 0.336059033870697,
+          "brier": 0.16319799423217773,
+          "ece": 0.05695703013771043
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.8125,
+          "macro_f1": 0.49396527385657824,
+          "balanced_accuracy": 0.49320312442102615,
+          "nll": 0.5475209355354309,
+          "brier": 0.29239606857299805,
+          "ece": 0.08788172777498082
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.8125,
+          "macro_f1": 0.3448440146809712,
+          "balanced_accuracy": 0.3352592320860846,
+          "nll": 0.5507939457893372,
+          "brier": 0.2892044484615326,
+          "ece": 0.08238276211692086
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7922077922077921,
+          "balanced_accuracy": 0.8090909090909091,
+          "nll": 0.5016987919807434,
+          "brier": 0.33707818388938904,
+          "ece": 0.24273110181093216
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.8083333373069763,
+          "macro_f1": 0.6609739466622931,
+          "balanced_accuracy": 0.7682169365411455,
+          "nll": 0.5053675770759583,
+          "brier": 0.2849770784378052,
+          "ece": 0.04942888768843817,
+          "correct": 291,
+          "source_groups": 296
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.8833333253860474,
+          "macro_f1": 0.5803675702255824,
+          "balanced_accuracy": 0.5703287557220141,
+          "nll": 0.3966897428035736,
+          "brier": 0.20690089464187622,
+          "ece": 0.10354437753868578
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.8715596199035645,
+          "macro_f1": 0.3705513553383736,
+          "balanced_accuracy": 0.3554931335830212,
+          "nll": 0.4083590507507324,
+          "brier": 0.21175283193588257,
+          "ece": 0.0939080466665767
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "balanced_accuracy": 1.0,
+          "nll": 0.28105682134628296,
+          "brier": 0.15882252156734467,
+          "ece": 0.2268645451705833
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.8583333492279053,
+          "macro_f1": 0.6694466465831616,
+          "balanced_accuracy": 0.8015844449667978,
+          "nll": 0.3757302463054657,
+          "brier": 0.20755057036876678,
+          "ece": 0.07326417845709304
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.8583333492279053,
+          "macro_f1": 0.6694466465831616,
+          "balanced_accuracy": 0.8015844449667978,
+          "nll": 0.3757302463054657,
+          "brier": 0.20755057036876678,
+          "ece": 0.07326417845709304
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.6833333373069763,
+          "macro_f1": 0.6725023342670401,
+          "balanced_accuracy": 0.6746031746031745,
+          "nll": 0.743682861328125,
+          "brier": 0.4404798150062561,
+          "ece": 0.10522863691654072
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.6833333373069763,
+          "macro_f1": 0.6725023342670401,
+          "balanced_accuracy": 0.6746031746031745,
+          "nll": 0.743682861328125,
+          "brier": 0.4404798150062561,
+          "ece": 0.10522863691654072
+        }
+      },
+      "fresh": {
+        "all": {
+          "examples": 600,
+          "accuracy": 0.7649999856948853,
+          "macro_f1": 0.7466349278077544,
+          "balanced_accuracy": 0.8278311826420478,
+          "nll": 0.6333848834037781,
+          "brier": 0.3522835373878479,
+          "ece": 0.047345234691273386,
+          "correct": 459,
+          "source_groups": 438
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 200,
+          "accuracy": 0.8050000071525574,
+          "macro_f1": 0.39188448722695296,
+          "balanced_accuracy": 0.39228395061728394,
+          "nll": 0.5753009915351868,
+          "brier": 0.31214356422424316,
+          "ece": 0.05068370536879763
+        },
+        "task:causal_relation": {
+          "examples": 14,
+          "accuracy": 0.7857142686843872,
+          "macro_f1": 0.44,
+          "balanced_accuracy": 0.4583333333333333,
+          "nll": 0.4487520754337311,
+          "brier": 0.29436057806015015,
+          "ece": 0.17771959969908657
+        },
+        "task:temporal_relation": {
+          "examples": 186,
+          "accuracy": 0.8064516186714172,
+          "macro_f1": 0.3678267308404295,
+          "balanced_accuracy": 0.3592592592592593,
+          "nll": 0.5848261713981628,
+          "brier": 0.31348201632499695,
+          "ece": 0.058217676394240914
+        },
+        "dataset:Re-DocRED": {
+          "examples": 200,
+          "accuracy": 0.875,
+          "macro_f1": 0.7850014497187837,
+          "balanced_accuracy": 0.8819769311572591,
+          "nll": 0.44668471813201904,
+          "brier": 0.22068434953689575,
+          "ece": 0.07447238422359578
+        },
+        "task:entity_relation": {
+          "examples": 200,
+          "accuracy": 0.875,
+          "macro_f1": 0.7850014497187837,
+          "balanced_accuracy": 0.8819769311572591,
+          "nll": 0.44668471813201904,
+          "brier": 0.22068434953689575,
+          "ece": 0.07447238422359578
+        },
+        "dataset:FEVEROUS": {
+          "examples": 200,
+          "accuracy": 0.6150000095367432,
+          "macro_f1": 0.5992834862897033,
+          "balanced_accuracy": 0.597962093548948,
+          "nll": 0.8781688809394836,
+          "brier": 0.5240226984024048,
+          "ece": 0.08757532522912365
+        },
+        "task:evidence_verdict": {
+          "examples": 200,
+          "accuracy": 0.6150000095367432,
+          "macro_f1": 0.5992834862897033,
+          "balanced_accuracy": 0.597962093548948,
+          "nll": 0.8781688809394836,
+          "brier": 0.5240226984024048,
+          "ece": 0.08757532522912365
+        }
+      },
+      "development": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7569444179534912,
+          "macro_f1": 0.7409423998493762,
+          "balanced_accuracy": 0.8454979136592431,
+          "nll": 0.5822380185127258,
+          "brier": 0.3327372670173645,
+          "ece": 0.023305566995164777,
+          "correct": 545,
+          "source_groups": 554
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.5916666388511658,
+          "macro_f1": 0.5859227871939736,
+          "balanced_accuracy": 0.5866328622289352,
+          "nll": 0.865706741809845,
+          "brier": 0.5189389586448669,
+          "ece": 0.08033774420074394
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.5916666388511658,
+          "macro_f1": 0.5859227871939736,
+          "balanced_accuracy": 0.5866328622289352,
+          "nll": 0.865706741809845,
+          "brier": 0.5189389586448669,
+          "ece": 0.08033774420074394
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8541666865348816,
+          "macro_f1": 0.7563106046609345,
+          "balanced_accuracy": 0.8811844457366846,
+          "nll": 0.36197584867477417,
+          "brier": 0.1991579383611679,
+          "ece": 0.06277376057181713
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8541666865348816,
+          "macro_f1": 0.7563106046609345,
+          "balanced_accuracy": 0.8811844457366846,
+          "nll": 0.36197584867477417,
+          "brier": 0.1991579383611679,
+          "ece": 0.06277376057181713
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.824999988079071,
+          "macro_f1": 0.6237882785640042,
+          "balanced_accuracy": 0.5764308311763015,
+          "nll": 0.5190314650535583,
+          "brier": 0.2801148593425751,
+          "ece": 0.06328090579433299
+        },
+        "task:temporal_relation": {
+          "examples": 225,
+          "accuracy": 0.8177777528762817,
+          "macro_f1": 0.49568241784600625,
+          "balanced_accuracy": 0.44797958009778543,
+          "nll": 0.5189321637153625,
+          "brier": 0.2786559462547302,
+          "ece": 0.05833623491777673
+        },
+        "task:causal_relation": {
+          "examples": 15,
+          "accuracy": 0.9333333373069763,
+          "macro_f1": 0.88,
+          "balanced_accuracy": 0.8333333333333333,
+          "nll": 0.5205201506614685,
+          "brier": 0.301998496055603,
+          "ece": 0.29288415797085143
+        }
+      }
+    }
+  },
+  "training": {
+    "v1": {
+      "args": {
+        "model_dir": "/kaggle/working/praxis_run/praxis",
+        "train_file": "/kaggle/working/praxis_run/data/train.jsonl",
+        "validation_file": "/kaggle/working/praxis_run/data/validation.jsonl",
+        "calibration_file": "/kaggle/working/praxis_run/data/calibration.jsonl",
+        "output_dir": "/kaggle/working/defense-praxis",
+        "model_name": "defense-praxis",
+        "epochs": 2,
+        "batch_size": 4,
+        "grad_accum": 4,
+        "max_length": 1024,
+        "head_length": 256,
+        "lr": 1e-05,
+        "head_lr": 2e-05,
+        "weight_decay": 0.01,
+        "aux_weight": 0.01,
+        "brier_weight": 0.1,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0,
+        "freeze_backbone": false,
+        "bf16": false,
+        "fp16": true,
+        "save_each_epoch": true,
+        "data_parallel": true,
+        "log_steps": 10,
+        "device": "cuda",
+        "seed": 42
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.367068115035693,
+          "nll": 0.9834456443786621,
+          "brier": 0.5584991574287415,
+          "accuracy": 0.44583332538604736,
+          "ece": 0.12986130636033788,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7783177403087417,
+          "nll": 0.8373631834983826,
+          "brier": 0.477012038230896,
+          "accuracy": 0.6069444417953491,
+          "ece": 0.0491160899388248,
+          "hard_label_examples": 720
+        }
+      ],
+      "optimizer_updates": 745,
+      "skipped_updates": 5,
+      "elapsed_seconds": 1103,
+      "temperatures": {
+        "choice": 1.0275452136993408,
+        "score": 1.0,
+        "noul": 1.0
+      },
+      "selected_epoch": 2
+    },
+    "control_a": {
+      "args": {
+        "model_dir": "/kaggle/working/praxis_run/praxis",
+        "train_file": "/kaggle/working/praxis_run/data/control_train.jsonl",
+        "validation_file": "/kaggle/working/praxis_run/data/control_validation.jsonl",
+        "calibration_file": "/kaggle/working/praxis_run/data/control_calibration.jsonl",
+        "output_dir": "/kaggle/working/defense-praxis/control_a",
+        "model_name": "defense-praxis-control-a",
+        "epochs": 4,
+        "batch_size": 4,
+        "grad_accum": 4,
+        "max_length": 1024,
+        "head_length": 256,
+        "lr": 5e-06,
+        "head_lr": 1e-05,
+        "weight_decay": 0.01,
+        "aux_weight": 0.01,
+        "brier_weight": 0.1,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0,
+        "freeze_backbone": false,
+        "bf16": false,
+        "fp16": true,
+        "save_each_epoch": false,
+        "data_parallel": true,
+        "log_steps": 10,
+        "device": "cuda",
+        "seed": 42
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.6790622837121288,
+          "nll": 0.98940110206604,
+          "brier": 0.535173773765564,
+          "accuracy": 0.6000000238418579,
+          "ece": 0.09823121804028725,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.5193907135992001,
+          "nll": 0.8684431314468384,
+          "brier": 0.4669249653816223,
+          "accuracy": 0.6458333134651184,
+          "ece": 0.09060316847390971,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.2814121672635277,
+          "nll": 1.2486964464187622,
+          "brier": 0.5527492761611938,
+          "accuracy": 0.6430555582046509,
+          "ece": 0.20171324245556035,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.1025497991790374,
+          "nll": 1.543067455291748,
+          "brier": 0.5813734531402588,
+          "accuracy": 0.6361111402511597,
+          "ece": 0.24691376523727748,
+          "hard_label_examples": 720
+        }
+      ],
+      "optimizer_updates": 1495,
+      "skipped_updates": 5,
+      "elapsed_seconds": 2245,
+      "temperatures": {
+        "choice": 1.402274489402771,
+        "score": 1.0,
+        "noul": 1.0
+      },
+      "selected_epoch": 2
+    },
+    "v2": {
+      "args": {
+        "model_dir": "/kaggle/working/praxis_run/praxis",
+        "train_file": "/kaggle/working/praxis_run/data/train.jsonl",
+        "validation_file": "/kaggle/working/praxis_run/data/validation.jsonl",
+        "calibration_file": "/kaggle/working/praxis_run/data/calibration.jsonl",
+        "output_dir": "/kaggle/working/defense-praxis",
+        "model_name": "defense-praxis-v2",
+        "epochs": 3,
+        "batch_size": 4,
+        "grad_accum": 4,
+        "max_length": 1024,
+        "head_length": 256,
+        "lr": 5e-06,
+        "head_lr": 1e-05,
+        "weight_decay": 0.01,
+        "aux_weight": 0.01,
+        "brier_weight": 0.1,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0,
+        "freeze_backbone": false,
+        "bf16": false,
+        "fp16": true,
+        "save_each_epoch": true,
+        "data_parallel": true,
+        "log_steps": 10,
+        "device": "cuda",
+        "seed": 42
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.6738316648290492,
+          "nll": 0.6580583453178406,
+          "brier": 0.37945687770843506,
+          "accuracy": 0.7319444417953491,
+          "ece": 0.04719040768883592,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.5167940305867232,
+          "nll": 0.6736270189285278,
+          "brier": 0.3658968508243561,
+          "accuracy": 0.7513889074325562,
+          "ece": 0.0948032488897907,
+          "hard_label_examples": 720
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.31634109258744864,
+          "nll": 0.8692881464958191,
+          "brier": 0.41766849160194397,
+          "accuracy": 0.737500011920929,
+          "ece": 0.15656110633025458,
+          "hard_label_examples": 720
+        }
+      ],
+      "optimizer_updates": 1496,
+      "skipped_updates": 4,
+      "elapsed_seconds": 2237,
+      "temperatures": {
+        "choice": 1.122043251991272,
+        "score": 1.0,
+        "noul": 1.0
+      },
+      "selected_epoch": 1
+    },
+    "control_c": {
+      "args": {
+        "model_dir": "/kaggle/working/praxis_run/praxis",
+        "train_file": "/kaggle/working/praxis_run/data/train.jsonl",
+        "validation_file": "/kaggle/working/praxis_run/data/validation.jsonl",
+        "calibration_file": "/kaggle/working/praxis_run/data/calibration.jsonl",
+        "teacher_predictions": null,
+        "teacher_manifest": null,
+        "distill_weight": 0.5,
+        "distill_temperature": 2.0,
+        "output_dir": "/kaggle/working/defense-praxis/control_c",
+        "model_name": "defense-praxis-control-c",
+        "epochs": 1,
+        "batch_size": 4,
+        "grad_accum": 4,
+        "max_length": 1024,
+        "head_length": 256,
+        "lr": 5e-06,
+        "head_lr": 1e-05,
+        "weight_decay": 0.01,
+        "aux_weight": 0.01,
+        "brier_weight": 0.1,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0,
+        "freeze_backbone": false,
+        "bf16": false,
+        "fp16": true,
+        "save_each_epoch": false,
+        "data_parallel": true,
+        "log_steps": 10,
+        "device": "cuda",
+        "seed": 42
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.6510714093321003,
+          "nll": 0.6197475790977478,
+          "brier": 0.34455811977386475,
+          "accuracy": 0.762499988079071,
+          "ece": 0.04749330553868676,
+          "hard_label_examples": 720
+        }
+      ],
+      "optimizer_updates": 497,
+      "skipped_updates": 3,
+      "elapsed_seconds": 752,
+      "temperatures": {
+        "choice": 1.1872036457061768,
+        "score": 1.0,
+        "noul": 1.0
+      },
+      "selected_epoch": 1
+    },
+    "v3": {
+      "args": {
+        "model_dir": "/kaggle/working/praxis_run/praxis",
+        "train_file": "/kaggle/working/praxis_run/data/train.jsonl",
+        "validation_file": "/kaggle/working/praxis_run/data/validation.jsonl",
+        "calibration_file": "/kaggle/working/praxis_run/data/calibration.jsonl",
+        "teacher_predictions": "/kaggle/working/defense-praxis/teacher_cache/teacher_predictions.jsonl",
+        "teacher_manifest": "/kaggle/working/defense-praxis/teacher_cache/teacher_manifest.json",
+        "distill_weight": 0.5,
+        "distill_temperature": 2.0,
+        "output_dir": "/kaggle/working/defense-praxis",
+        "model_name": "defense-praxis-v3",
+        "epochs": 1,
+        "batch_size": 4,
+        "grad_accum": 4,
+        "max_length": 1024,
+        "head_length": 256,
+        "lr": 5e-06,
+        "head_lr": 1e-05,
+        "weight_decay": 0.01,
+        "aux_weight": 0.01,
+        "brier_weight": 0.1,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0,
+        "freeze_backbone": false,
+        "bf16": false,
+        "fp16": true,
+        "save_each_epoch": false,
+        "data_parallel": true,
+        "log_steps": 10,
+        "device": "cuda",
+        "seed": 42
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.37795713028497996,
+          "nll": 0.582053542137146,
+          "brier": 0.33270105719566345,
+          "accuracy": 0.7555555701255798,
+          "ece": 0.023327358413435247,
+          "hard_label_examples": 720
+        }
+      ],
+      "optimizer_updates": 498,
+      "skipped_updates": 2,
+      "elapsed_seconds": 753,
+      "temperatures": {
+        "choice": 0.9733668565750122,
+        "score": 1.0,
+        "noul": 1.0
+      },
+      "selected_epoch": 1
+    }
+  },
+  "partitions": {
+    "v1": {
+      "train.jsonl": {
+        "rows": 6000,
+        "sha256": "1b9f4b6f8b1d4c620f5f82de2725c7ae051b00253a40d687cf89d170adb6496c"
+      },
+      "validation.jsonl": {
+        "rows": 720,
+        "sha256": "7f0a836aefb429cba1595122b2c9aea13605e6dfd886e3466fae935081c68918"
+      },
+      "calibration.jsonl": {
+        "rows": 360,
+        "sha256": "ef40c2917c6c0ac4c6061cf231fbee55b5dbfa94a20221c09247804868501c7c"
+      },
+      "test.jsonl": {
+        "rows": 720,
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2"
+      }
+    },
+    "v2": {
+      "train.jsonl": {
+        "rows": 8000,
+        "sha256": "175c10845fe704de0dab04b680ee721016737b9716413bba6c8341de5edb16f8"
+      },
+      "validation.jsonl": {
+        "rows": 720,
+        "sha256": "5a558a62ffb866be32d9391393fe6f621bdf3242864f2a3874de2b66630d30e3"
+      },
+      "calibration.jsonl": {
+        "rows": 360,
+        "sha256": "97f550ebec638a6a9f4034d30779fc2e3288816b22976087593e61ba9c9be300"
+      },
+      "test.jsonl": {
+        "rows": 720,
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2"
+      },
+      "confirmation.jsonl": {
+        "rows": 360,
+        "sha256": "d6a5cd578ee316247a90db040bef39579d9abc3235052c44661570adb037e7ed"
+      }
+    },
+    "v3": {
+      "train.jsonl": {
+        "rows": 8000,
+        "sha256": "175c10845fe704de0dab04b680ee721016737b9716413bba6c8341de5edb16f8"
+      },
+      "validation.jsonl": {
+        "rows": 720,
+        "sha256": "5a558a62ffb866be32d9391393fe6f621bdf3242864f2a3874de2b66630d30e3"
+      },
+      "calibration.jsonl": {
+        "rows": 360,
+        "sha256": "97f550ebec638a6a9f4034d30779fc2e3288816b22976087593e61ba9c9be300"
+      },
+      "test.jsonl": {
+        "rows": 720,
+        "sha256": "d2a6394ef326a7c76f37fa5db708a03d39f0cf0c4927a9f6f9feb3e291920ea2"
+      },
+      "confirmation.jsonl": {
+        "rows": 360,
+        "sha256": "d6a5cd578ee316247a90db040bef39579d9abc3235052c44661570adb037e7ed"
+      },
+      "fresh.jsonl": {
+        "rows": 600,
+        "sha256": "abcd227ccabbc87c814e9b01d3ef19146c640d14ec2f7ef23f9d158e8d233693"
+      }
+    }
+  },
+  "v3_temporal_classes": {
+    "BEFORE": {
+      "support": 135,
+      "precision": 0.8152866242038217,
+      "recall": 0.9481481481481482,
+      "f1": 0.8767123287671232
+    },
+    "CONTAINS": {
+      "support": 45,
+      "precision": 0.7586206896551724,
+      "recall": 0.4888888888888889,
+      "f1": 0.5945945945945946
+    },
+    "OVERLAP": {
+      "support": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "SIMULTANEOUS": {
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "v3_causal_classes": {
+    "CAUSE": {
+      "support": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "PRECONDITION": {
+      "support": 12,
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "f1": 0.88
+    }
+  },
+  "paired": {
+    "v1": {
+      "difference": 0.20333333333333334,
+      "source_group_bootstrap_95": [
+        0.1595197255574614,
+        0.24705882352941178
+      ],
+      "source_groups": 438
+    },
+    "v2": {
+      "difference": 0.04666666666666667,
+      "source_group_bootstrap_95": [
+        0.01948051948051948,
+        0.07388316151202749
+      ],
+      "source_groups": 438
+    },
+    "control": {
+      "difference": 0.03333333333333333,
+      "source_group_bootstrap_95": [
+        0.012367491166077738,
+        0.05660377358490566
+      ],
+      "source_groups": 438
+    },
+    "committee": {
+      "difference": 0.0016666666666666668,
+      "source_group_bootstrap_95": [
+        -0.018456375838926176,
+        0.021885521885521887
+      ],
+      "source_groups": 438
+    }
+  },
+  "regression_flags": [],
+  "sensitivity": {
+    "scope": "Post-hoc uncertainty sensitivity only; no candidate selection or recipe changes.",
+    "clustering": "Connected components of shared split_groups (article/evidence/claim groups)",
+    "components": 431,
+    "source_id_groups": 438,
+    "largest_component_questions": 5,
+    "comparisons": {
+      "v1": {
+        "difference": 0.20333333333333334,
+        "connected_evidence_group_bootstrap_95": [
+          0.1634446397188049,
+          0.24528301886792453
+        ]
+      },
+      "v2": {
+        "difference": 0.04666666666666667,
+        "connected_evidence_group_bootstrap_95": [
+          0.01669449081803005,
+          0.07308970099667775
+        ]
+      },
+      "control": {
+        "difference": 0.03333333333333333,
+        "connected_evidence_group_bootstrap_95": [
+          0.01335559265442404,
+          0.05518394648829431
+        ]
+      },
+      "committee": {
+        "difference": 0.0016666666666666668,
+        "connected_evidence_group_bootstrap_95": [
+          -0.018302828618968387,
+          0.02364864864864865
+        ]
+      }
+    }
+  },
+  "teacher_policy": {
+    "arms": [
+      "v1",
+      "control",
+      "v2"
+    ],
+    "weights": {
+      "causal_relation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "entity_relation": [
+        0.6,
+        0.4,
+        0.0
+      ],
+      "evidence_verdict": [
+        0.3,
+        0.7,
+        0.0
+      ],
+      "temporal_relation": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "selection": {
+      "causal_relation": {
+        "weights": {
+          "v1": 0.0,
+          "control": 0.0,
+          "v2": 1.0
+        },
+        "development": {
+          "examples": 15,
+          "correct": 13,
+          "accuracy": 0.8666666666666667,
+          "macro_f1": 0.7916666666666666,
+          "nll": 0.5691123143387292,
+          "brier": 0.3454605526034108
+        },
+        "trials": 66
+      },
+      "entity_relation": {
+        "weights": {
+          "v1": 0.6,
+          "control": 0.4,
+          "v2": 0.0
+        },
+        "development": {
+          "examples": 240,
+          "correct": 208,
+          "accuracy": 0.8666666666666667,
+          "macro_f1": 0.8039063800069493,
+          "nll": 0.33010994543019306,
+          "brier": 0.18347775304214287
+        },
+        "trials": 66
+      },
+      "evidence_verdict": {
+        "weights": {
+          "v1": 0.3,
+          "control": 0.7,
+          "v2": 0.0
+        },
+        "development": {
+          "examples": 240,
+          "correct": 144,
+          "accuracy": 0.6,
+          "macro_f1": 0.5957168975757813,
+          "nll": 0.8374000653249175,
+          "brier": 0.5087828742818353
+        },
+        "trials": 66
+      },
+      "temporal_relation": {
+        "weights": {
+          "v1": 0.0,
+          "control": 0.0,
+          "v2": 1.0
+        },
+        "development": {
+          "examples": 225,
+          "correct": 183,
+          "accuracy": 0.8133333333333334,
+          "macro_f1": 0.447029822029822,
+          "nll": 0.5445121139062036,
+          "brier": 0.2897205979247443
+        },
+        "trials": 66
+      }
+    },
+    "objective": "development NLL",
+    "grid": 10,
+    "routing_feature": "task supplied by application",
+    "development_sha256": {
+      "v1": "4a4e9cf80992ac2ee080eae86d6538b494458fdb1e37d039654f8153de7fedb0",
+      "control": "b684be76a142a66bb80747259e1da5ebf05ff288ff50c048401cc8cbc4e52e2d",
+      "v2": "59692da1dbce464c93ccca74a40752486a6c37babc1c362b48efd42cbfb4eb40"
+    }
+  },
+  "conversion": {
+    "base_model": "/tmp/julia-1-checkpoint",
+    "revision": "a85b127321d580d65176c89ced8273f305745d85",
+    "output_dir": "/tmp/julia-moe-converted",
+    "num_experts": 4,
+    "top_k": 2,
+    "moe_layers": "every-other",
+    "expert_noise_std": 0.0,
+    "seed": 42,
+    "resolved_commit": null,
+    "parameters": 188104195,
+    "julia_settings": {
+      "head_layers": 2,
+      "n_act": 2,
+      "dropout": 0.1
+    },
+    "preserved_components": [
+      "head",
+      "type_emb",
+      "scorer",
+      "act_head",
+      "temperature"
+    ]
+  },
+  "runtime": {
+    "devices": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "torch": "2.10.0+cu128",
+    "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "cuda": "12.8",
+    "started_unix": 1790589498.6699145
+  },
+  "v2_run": {
+    "dense": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.28333333134651184,
+          "macro_f1": 0.2576001560321693,
+          "balanced_accuracy": 0.4399253616402573,
+          "nll": 6.348357677459717,
+          "brier": 1.2991269826889038,
+          "ece": 0.6144865300974435
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.36666667461395264,
+          "macro_f1": 0.1873037817909502,
+          "balanced_accuracy": 0.33430735930735933,
+          "nll": 7.580972671508789,
+          "brier": 1.2587432861328125,
+          "ece": 0.6312435807690686
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.36666667461395264,
+          "macro_f1": 0.1873037817909502,
+          "balanced_accuracy": 0.33430735930735933,
+          "nll": 7.580972671508789,
+          "brier": 1.2587432861328125,
+          "ece": 0.6312435807690686
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.4541666805744171,
+          "macro_f1": 0.2769972424026036,
+          "balanced_accuracy": 0.459833632742326,
+          "nll": 2.250741720199585,
+          "brier": 0.8648867011070251,
+          "ece": 0.35151803554420286
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.4541666805744171,
+          "macro_f1": 0.2769972424026036,
+          "balanced_accuracy": 0.459833632742326,
+          "nll": 2.250741720199585,
+          "brier": 0.8648867011070251,
+          "ece": 0.35151803554420286
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.02916666679084301,
+          "macro_f1": 0.08029188948306595,
+          "balanced_accuracy": 0.29696969696969694,
+          "nll": 9.213358879089355,
+          "brier": 1.773750901222229,
+          "ece": 0.8644853666935983
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.008928571827709675,
+          "macro_f1": 0.003787878787878788,
+          "balanced_accuracy": 0.25,
+          "nll": 9.574965476989746,
+          "brier": 1.8131784200668335,
+          "ece": 0.88262327189936
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.3125,
+          "macro_f1": 0.30980392156862746,
+          "balanced_accuracy": 0.3909090909090909,
+          "nll": 4.150857448577881,
+          "brier": 1.2217644453048706,
+          "ece": 0.6105555538088083
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.2666666805744171,
+          "macro_f1": 0.2041306798926516,
+          "balanced_accuracy": 0.37323845842158826,
+          "nll": 6.200961589813232,
+          "brier": 1.3089011907577515,
+          "ece": 0.6148314887430094
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.02500000037252903,
+          "macro_f1": 0.03728070175438596,
+          "balanced_accuracy": 0.34259259259259256,
+          "nll": 8.892308235168457,
+          "brier": 1.7558192014694214,
+          "ece": 0.8531782446431531
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.01834862306714058,
+          "macro_f1": 0.021929824561403508,
+          "balanced_accuracy": 0.2638888888888889,
+          "nll": 9.226879119873047,
+          "brier": 1.7812302112579346,
+          "ece": 0.8571757390902561
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.09090909361839294,
+          "macro_f1": 0.08333333333333333,
+          "balanced_accuracy": 0.5,
+          "nll": 5.577005863189697,
+          "brier": 1.50401771068573,
+          "ece": 0.8135665626667627
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.42500001192092896,
+          "macro_f1": 0.22454029912501672,
+          "balanced_accuracy": 0.38013824410883235,
+          "nll": 2.1220338344573975,
+          "brier": 0.8719199299812317,
+          "ece": 0.3421910925877978
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.42500001192092896,
+          "macro_f1": 0.22454029912501672,
+          "balanced_accuracy": 0.38013824410883235,
+          "nll": 2.1220338344573975,
+          "brier": 0.8719199299812317,
+          "ece": 0.3421910925877978
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.3499999940395355,
+          "macro_f1": 0.1728395061728395,
+          "balanced_accuracy": 0.3333333333333333,
+          "nll": 7.588541507720947,
+          "brier": 1.2989648580551147,
+          "ece": 0.6491253077983856
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.3499999940395355,
+          "macro_f1": 0.1728395061728395,
+          "balanced_accuracy": 0.3333333333333333,
+          "nll": 7.588541507720947,
+          "brier": 1.2989648580551147,
+          "ece": 0.6491253077983856
+        }
+      }
+    },
+    "v1": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.6527777910232544,
+          "macro_f1": 0.6570884318042922,
+          "balanced_accuracy": 0.8208271854007128,
+          "nll": 0.8078171014785767,
+          "brier": 0.4491661787033081,
+          "ece": 0.036649908829467226
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.612500011920929,
+          "macro_f1": 0.6043499543899714,
+          "balanced_accuracy": 0.6039277795375356,
+          "nll": 0.8522393703460693,
+          "brier": 0.5076655149459839,
+          "ece": 0.04372283546296685
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.612500011920929,
+          "macro_f1": 0.6043499543899714,
+          "balanced_accuracy": 0.6039277795375356,
+          "nll": 0.8522393703460693,
+          "brier": 0.5076655149459839,
+          "ece": 0.04372283546296685
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.6794535426114374,
+          "balanced_accuracy": 0.8577369413892103,
+          "nll": 0.33472740650177,
+          "brier": 0.1681714653968811,
+          "ece": 0.0479487520700788
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.6794535426114374,
+          "balanced_accuracy": 0.8577369413892103,
+          "nll": 0.33472740650177,
+          "brier": 0.1681714653968811,
+          "ece": 0.0479487520700788
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.4541666805744171,
+          "macro_f1": 0.4076213038899958,
+          "balanced_accuracy": 0.5663309544454078,
+          "nll": 1.2364842891693115,
+          "brier": 0.6716615557670593,
+          "ece": 0.09029875788270816
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.4375,
+          "macro_f1": 0.2682947009330329,
+          "balanced_accuracy": 0.46313279530447543,
+          "nll": 1.282190203666687,
+          "brier": 0.6902388334274292,
+          "ece": 0.0880324097328625
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6862745098039216,
+          "balanced_accuracy": 0.7727272727272727,
+          "nll": 0.5966029763221741,
+          "brier": 0.41157978773117065,
+          "ece": 0.180494025349617
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.5888888835906982,
+          "macro_f1": 0.6601172939656091,
+          "balanced_accuracy": 0.7813832616536229,
+          "nll": 0.8168460130691528,
+          "brier": 0.4563477039337158,
+          "ece": 0.07217614313628301
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.3166666626930237,
+          "macro_f1": 0.32718425740738116,
+          "balanced_accuracy": 0.5338535164377861,
+          "nll": 1.275871992111206,
+          "brier": 0.6876012086868286,
+          "ece": 0.07982453854464788
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.2752293646335602,
+          "macro_f1": 0.18489403316989522,
+          "balanced_accuracy": 0.3757802746566792,
+          "nll": 1.3568353652954102,
+          "brier": 0.7262018918991089,
+          "ece": 0.07516248673087578
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.7272727489471436,
+          "macro_f1": 0.611764705882353,
+          "balanced_accuracy": 0.85,
+          "nll": 0.4735996127128601,
+          "brier": 0.30510368943214417,
+          "ece": 0.126021177623036
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.875,
+          "macro_f1": 0.7042986425339367,
+          "balanced_accuracy": 0.8299935358758888,
+          "nll": 0.37122437357902527,
+          "brier": 0.19510507583618164,
+          "ece": 0.06264872809285488
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.875,
+          "macro_f1": 0.7042986425339367,
+          "balanced_accuracy": 0.8299935358758888,
+          "nll": 0.37122437357902527,
+          "brier": 0.19510507583618164,
+          "ece": 0.06264872809285488
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.574999988079071,
+          "macro_f1": 0.560173325231054,
+          "balanced_accuracy": 0.5634920634920635,
+          "nll": 0.80344158411026,
+          "brier": 0.4863368272781372,
+          "ece": 0.09016137610345343
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.574999988079071,
+          "macro_f1": 0.560173325231054,
+          "balanced_accuracy": 0.5634920634920635,
+          "nll": 0.80344158411026,
+          "brier": 0.4863368272781372,
+          "ece": 0.09016137610345343
+        }
+      }
+    },
+    "control": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.6736111044883728,
+          "macro_f1": 0.6903173388100589,
+          "balanced_accuracy": 0.8552162640183181,
+          "nll": 0.7817436456680298,
+          "brier": 0.4213424623012543,
+          "ece": 0.03954814059261322
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6208333373069763,
+          "macro_f1": 0.6145999960844334,
+          "balanced_accuracy": 0.6131823461091753,
+          "nll": 0.8026931881904602,
+          "brier": 0.4804622530937195,
+          "ece": 0.03220858741422433
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6208333373069763,
+          "macro_f1": 0.6145999960844334,
+          "balanced_accuracy": 0.6131823461091753,
+          "nll": 0.8026931881904602,
+          "brier": 0.4804622530937195,
+          "ece": 0.03220858741422433
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8958333134651184,
+          "macro_f1": 0.711260722299973,
+          "balanced_accuracy": 0.8846041647435852,
+          "nll": 0.3434202969074249,
+          "brier": 0.1681617945432663,
+          "ece": 0.05516778904030181
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8958333134651184,
+          "macro_f1": 0.711260722299973,
+          "balanced_accuracy": 0.8846041647435852,
+          "nll": 0.3434202969074249,
+          "brier": 0.1681617945432663,
+          "ece": 0.05516778904030181
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.5041666626930237,
+          "macro_f1": 0.4698742804639315,
+          "balanced_accuracy": 0.6872521991744295,
+          "nll": 1.1991175413131714,
+          "brier": 0.6154033541679382,
+          "ece": 0.07389523071219783
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.4776785671710968,
+          "macro_f1": 0.2714780873625639,
+          "balanced_accuracy": 0.5763328442161898,
+          "nll": 1.252991795539856,
+          "brier": 0.6400910019874573,
+          "ece": 0.07363665227073535
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.875,
+          "macro_f1": 0.8666666666666667,
+          "balanced_accuracy": 0.9090909090909092,
+          "nll": 0.4448773264884949,
+          "brier": 0.26977717876434326,
+          "ece": 0.20451734960079193
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.605555534362793,
+          "macro_f1": 0.6122735624647501,
+          "balanced_accuracy": 0.7570102575583376,
+          "nll": 0.8766170144081116,
+          "brier": 0.47318652272224426,
+          "ece": 0.0655784220922046
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.32499998807907104,
+          "macro_f1": 0.3209050887622316,
+          "balanced_accuracy": 0.5652517686225551,
+          "nll": 1.4471917152404785,
+          "brier": 0.7467387914657593,
+          "ece": 0.12346713352430971
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.29357796907424927,
+          "macro_f1": 0.2105242998100141,
+          "balanced_accuracy": 0.4478776529338327,
+          "nll": 1.5324947834014893,
+          "brier": 0.7794206142425537,
+          "ece": 0.11563709820309587
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.6363636255264282,
+          "macro_f1": 0.5416666666666666,
+          "balanced_accuracy": 0.8,
+          "nll": 0.6019170880317688,
+          "brier": 0.42289191484451294,
+          "ece": 0.20358902280839786
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6427397221514868,
+          "balanced_accuracy": 0.7907619341442871,
+          "nll": 0.4015393555164337,
+          "brier": 0.2152169644832611,
+          "ece": 0.083195503049739
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.8416666388511658,
+          "macro_f1": 0.6427397221514868,
+          "balanced_accuracy": 0.7907619341442871,
+          "nll": 0.4015393555164337,
+          "brier": 0.2152169644832611,
+          "ece": 0.083195503049739
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.6499999761581421,
+          "macro_f1": 0.6466196355085244,
+          "balanced_accuracy": 0.6455026455026455,
+          "nll": 0.7811197638511658,
+          "brier": 0.4576038420200348,
+          "ece": 0.062170750609215286
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.6499999761581421,
+          "macro_f1": 0.6466196355085244,
+          "balanced_accuracy": 0.6455026455026455,
+          "nll": 0.7811197638511658,
+          "brier": 0.4576038420200348,
+          "ece": 0.062170750609215286
+        }
+      }
+    },
+    "v2": {
+      "historical": {
+        "all": {
+          "examples": 720,
+          "accuracy": 0.7638888955116272,
+          "macro_f1": 0.6904411440592318,
+          "balanced_accuracy": 0.8486667392144513,
+          "nll": 0.5860506296157837,
+          "brier": 0.32688087224960327,
+          "ece": 0.03853067755602813
+        },
+        "dataset:FEVEROUS": {
+          "examples": 240,
+          "accuracy": 0.6291666626930237,
+          "macro_f1": 0.632165190246522,
+          "balanced_accuracy": 0.6325889557596874,
+          "nll": 0.8352493047714233,
+          "brier": 0.49423471093177795,
+          "ece": 0.040231148456215796
+        },
+        "task:evidence_verdict": {
+          "examples": 240,
+          "accuracy": 0.6291666626930237,
+          "macro_f1": 0.632165190246522,
+          "balanced_accuracy": 0.6325889557596874,
+          "nll": 0.8352493047714233,
+          "brier": 0.49423471093177795,
+          "ece": 0.040231148456215796
+        },
+        "dataset:Re-DocRED": {
+          "examples": 240,
+          "accuracy": 0.8708333373069763,
+          "macro_f1": 0.7140913330941826,
+          "balanced_accuracy": 0.902214166976332,
+          "nll": 0.3782936632633209,
+          "brier": 0.18907828629016876,
+          "ece": 0.0538420780976942
+        },
+        "task:entity_relation": {
+          "examples": 240,
+          "accuracy": 0.8708333373069763,
+          "macro_f1": 0.7140913330941826,
+          "balanced_accuracy": 0.902214166976332,
+          "nll": 0.3782936632633209,
+          "brier": 0.18907828629016876,
+          "ece": 0.0538420780976942
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 240,
+          "accuracy": 0.7916666865348816,
+          "macro_f1": 0.4318351543736872,
+          "balanced_accuracy": 0.430155924616673,
+          "nll": 0.5446088314056396,
+          "brier": 0.2973296344280243,
+          "ece": 0.06655582109899257
+        },
+        "task:temporal_relation": {
+          "examples": 224,
+          "accuracy": 0.7946428656578064,
+          "macro_f1": 0.2932072770150762,
+          "balanced_accuracy": 0.2906884323795549,
+          "nll": 0.5459059476852417,
+          "brier": 0.2919428050518036,
+          "ece": 0.0687897283268002
+        },
+        "task:causal_relation": {
+          "examples": 16,
+          "accuracy": 0.75,
+          "macro_f1": 0.7090909090909091,
+          "balanced_accuracy": 0.7090909090909091,
+          "nll": 0.5264492630958557,
+          "brier": 0.3727451264858246,
+          "ece": 0.2961265482008457
+        }
+      },
+      "confirmation": {
+        "all": {
+          "examples": 360,
+          "accuracy": 0.7972221970558167,
+          "macro_f1": 0.6172057893285545,
+          "balanced_accuracy": 0.7308370726295879,
+          "nll": 0.5600893497467041,
+          "brier": 0.3183121979236603,
+          "ece": 0.062158542907132075
+        },
+        "dataset:MAVEN-ERE": {
+          "examples": 120,
+          "accuracy": 0.8916666507720947,
+          "macro_f1": 0.4190411796902669,
+          "balanced_accuracy": 0.41479400749063666,
+          "nll": 0.4326605498790741,
+          "brier": 0.2245236039161682,
+          "ece": 0.1534880441359816
+        },
+        "task:temporal_relation": {
+          "examples": 109,
+          "accuracy": 0.8899082541465759,
+          "macro_f1": 0.3904665314401623,
+          "balanced_accuracy": 0.37219101123595505,
+          "nll": 0.44464513659477234,
+          "brier": 0.22832037508487701,
+          "ece": 0.15363759081975203
+        },
+        "task:causal_relation": {
+          "examples": 11,
+          "accuracy": 0.9090909361839294,
+          "macro_f1": 0.47619047619047616,
+          "balanced_accuracy": 0.5,
+          "nll": 0.3139040768146515,
+          "brier": 0.18690095841884613,
+          "ece": 0.15200670651976012
+        },
+        "dataset:Re-DocRED": {
+          "examples": 120,
+          "accuracy": 0.824999988079071,
+          "macro_f1": 0.6362677066009061,
+          "balanced_accuracy": 0.7775876084699614,
+          "nll": 0.4613043963909149,
+          "brier": 0.2546178996562958,
+          "ece": 0.07613348942132067
+        },
+        "task:entity_relation": {
+          "examples": 120,
+          "accuracy": 0.824999988079071,
+          "macro_f1": 0.6362677066009061,
+          "balanced_accuracy": 0.7775876084699614,
+          "nll": 0.4613043963909149,
+          "brier": 0.2546178996562958,
+          "ece": 0.07613348942132067
+        },
+        "dataset:FEVEROUS": {
+          "examples": 120,
+          "accuracy": 0.675000011920929,
+          "macro_f1": 0.6767744701269178,
+          "balanced_accuracy": 0.6772486772486772,
+          "nll": 0.7863031029701233,
+          "brier": 0.475795179605484,
+          "ece": 0.0804406135578673
+        },
+        "task:evidence_verdict": {
+          "examples": 120,
+          "accuracy": 0.675000011920929,
+          "macro_f1": 0.6767744701269178,
+          "balanced_accuracy": 0.6772486772486772,
+          "nll": 0.7863031029701233,
+          "brier": 0.475795179605484,
+          "ece": 0.0804406135578673
+        }
+      }
+    }
+  },
+  "v1_run": {
+    "untuned": {
+      "all": {
+        "examples": 720,
+        "accuracy": 0.28333333134651184,
+        "macro_f1": 0.2591039154306656,
+        "nll": 6.345993518829346,
+        "brier": 1.2993106842041016,
+        "ece": 0.6144745976634199
+      },
+      "dataset:FEVEROUS": {
+        "examples": 240,
+        "accuracy": 0.36666667461395264,
+        "macro_f1": 0.1873037817909502,
+        "nll": 7.57942533493042,
+        "brier": 1.2586959600448608,
+        "ece": 0.6311930670711872
+      },
+      "task:evidence_verdict": {
+        "examples": 240,
+        "accuracy": 0.36666667461395264,
+        "macro_f1": 0.1873037817909502,
+        "nll": 7.57942533493042,
+        "brier": 1.2586959600448608,
+        "ece": 0.6311930670711872
+      },
+      "dataset:Re-DocRED": {
+        "examples": 240,
+        "accuracy": 0.4541666805744171,
+        "macro_f1": 0.2786979226747125,
+        "nll": 2.2505486011505127,
+        "brier": 0.8656560182571411,
+        "ece": 0.35150339229735883
+      },
+      "task:entity_relation": {
+        "examples": 240,
+        "accuracy": 0.4541666805744171,
+        "macro_f1": 0.2786979226747125,
+        "nll": 2.2505486011505127,
+        "brier": 0.8656560182571411,
+        "ece": 0.35150339229735883
+      },
+      "dataset:MAVEN-ERE": {
+        "examples": 240,
+        "accuracy": 0.02916666679084301,
+        "macro_f1": 0.08029188948306595,
+        "nll": 9.208005905151367,
+        "brier": 1.7735800743103027,
+        "ece": 0.8645572509927787
+      },
+      "task:temporal_relation": {
+        "examples": 224,
+        "accuracy": 0.008928571827709675,
+        "macro_f1": 0.003787878787878788,
+        "nll": 9.569097518920898,
+        "brier": 1.8132270574569702,
+        "ece": 0.8828216785045475
+      },
+      "task:causal_relation": {
+        "examples": 16,
+        "accuracy": 0.3125,
+        "macro_f1": 0.30980392156862746,
+        "nll": 4.1527252197265625,
+        "brier": 1.2185194492340088,
+        "ece": 0.6088556032627821
+      }
+    },
+    "v1": {
+      "all": {
+        "examples": 720,
+        "accuracy": 0.6527777910232544,
+        "macro_f1": 0.6570884318042922,
+        "nll": 0.8078171014785767,
+        "brier": 0.4491661787033081,
+        "ece": 0.036649908829467226
+      },
+      "dataset:FEVEROUS": {
+        "examples": 240,
+        "accuracy": 0.612500011920929,
+        "macro_f1": 0.6043499543899714,
+        "nll": 0.8522393703460693,
+        "brier": 0.5076655149459839,
+        "ece": 0.04372283546296685
+      },
+      "task:evidence_verdict": {
+        "examples": 240,
+        "accuracy": 0.612500011920929,
+        "macro_f1": 0.6043499543899714,
+        "nll": 0.8522393703460693,
+        "brier": 0.5076655149459839,
+        "ece": 0.04372283546296685
+      },
+      "dataset:Re-DocRED": {
+        "examples": 240,
+        "accuracy": 0.8916666507720947,
+        "macro_f1": 0.6794535426114374,
+        "nll": 0.33472740650177,
+        "brier": 0.1681714653968811,
+        "ece": 0.0479487520700788
+      },
+      "task:entity_relation": {
+        "examples": 240,
+        "accuracy": 0.8916666507720947,
+        "macro_f1": 0.6794535426114374,
+        "nll": 0.33472740650177,
+        "brier": 0.1681714653968811,
+        "ece": 0.0479487520700788
+      },
+      "dataset:MAVEN-ERE": {
+        "examples": 240,
+        "accuracy": 0.4541666805744171,
+        "macro_f1": 0.4076213038899958,
+        "nll": 1.2364842891693115,
+        "brier": 0.6716615557670593,
+        "ece": 0.09029875788270816
+      },
+      "task:temporal_relation": {
+        "examples": 224,
+        "accuracy": 0.4375,
+        "macro_f1": 0.2682947009330329,
+        "nll": 1.282190203666687,
+        "brier": 0.6902388334274292,
+        "ece": 0.0880324097328625
+      },
+      "task:causal_relation": {
+        "examples": 16,
+        "accuracy": 0.6875,
+        "macro_f1": 0.6862745098039216,
+        "nll": 0.5966029763221741,
+        "brier": 0.41157978773117065,
+        "ece": 0.180494025349617
+      }
+    }
+  },
+  "provenance": {
+    ".local/v3/kaggle/output/defense-praxis/experiment_comparison.json": {
+      "sha256": "1826a59982cdb271a239ac0f720a490083db9bccb3d3964c0780c0daf01b0f70",
+      "bytes": 716656
+    },
+    ".local/v3/kaggle/output/defense-praxis/dense_fresh_evaluation.json": {
+      "sha256": "8db34f8f76db4539417dfed18a4c742425dfc2f4684e716804fb931a535a0d79",
+      "bytes": 65539
+    },
+    ".local/v3/kaggle/output/defense-praxis/v1_fresh_evaluation.json": {
+      "sha256": "b8927208ae9bf81a5e6692ccf400b40747be4d17e5035d7eb3344246b0cafdc5",
+      "bytes": 61542
+    },
+    ".local/v3/kaggle/output/defense-praxis/teacher_a_fresh_evaluation.json": {
+      "sha256": "8358c89a106cbca1cae593b44af8f7c840ad47a06a8c6cd5358b95f8023f7fd7",
+      "bytes": 60387
+    },
+    ".local/v3/kaggle/output/defense-praxis/v2_fresh_evaluation.json": {
+      "sha256": "efe8d7cb7fe4b569928b5b9beb58145078359ea53cc94345847893ee1dcdd36c",
+      "bytes": 61544
+    },
+    ".local/v3/kaggle/output/defense-praxis/control_fresh_evaluation.json": {
+      "sha256": "34422e942e71acf02897c5519b2e3ac6f56c5a2de7c9a1538892b3e4f2a1f9e8",
+      "bytes": 60121
+    },
+    ".local/v3/kaggle/output/defense-praxis/v3_fresh_evaluation.json": {
+      "sha256": "9614983a6261252dbdae3717d2e9487cd5142e8a06a1bd2e94221ae1c38a670f",
+      "bytes": 58712
+    },
+    ".local/v3/evidence_group_bootstrap.json": {
+      "sha256": "874f052464322a59537a0e205cf3fd1cab4af4e95dae6eb7f8e5f973361bbb49",
+      "bytes": 1011
+    },
+    ".local/v3/kaggle/output/defense-praxis/teacher_policy.json": {
+      "sha256": "6d6b80c5617d9e6a9b3d5f6cc2d6e00a6453fbcf2d125cdb5dfddf56f1e079f5",
+      "bytes": 2198
+    },
+    ".local/publication/praxis/conversion.json": {
+      "sha256": "7304310b9c91f2a786ce1cbd70f0aabe431a910516b12c6cfa2790bad9ea93f9",
+      "bytes": 501
+    },
+    ".local/v3/kaggle/output/defense-praxis/runtime_environment.json": {
+      "sha256": "63a00fb5363bc01f9a5207f93b77ff47bc4c99a036a42f559174f0f29e4d8e26",
+      "bytes": 203
+    },
+    ".local/v2/kaggle/output/defense-praxis/dense_historical_evaluation.json": {
+      "sha256": "c76834b2bfbaef3c800918ad14366e8faee2c8b876d82d0fc21bdbbfedbc663a",
+      "bytes": 69739
+    },
+    ".local/v2/kaggle/output/defense-praxis/dense_confirmation_evaluation.json": {
+      "sha256": "a2ef4b4c9faba96aff3fa771635ca0aa76c9f8d7bf676ef6ab4ec163a6bf851f",
+      "bytes": 55884
+    },
+    ".local/v2/kaggle/output/defense-praxis/v1_historical_evaluation.json": {
+      "sha256": "e62c7e3a643d1bc9ea47c5edcf856c3235600cf3b6654bd0f8ec53f8aa7c68c7",
+      "bytes": 61242
+    },
+    ".local/v2/kaggle/output/defense-praxis/v1_confirmation_evaluation.json": {
+      "sha256": "5349339d0e5090f11a08124216dafb26a40746ba2d9d4f4f4e7a30d5c5e3ef95",
+      "bytes": 48533
+    },
+    ".local/v2/kaggle/output/defense-praxis/control_historical_evaluation.json": {
+      "sha256": "760bcba2bd3a0bb4aedafe592687edf853ba059ba00342f99c5afaf216c5e49a",
+      "bytes": 61503
+    },
+    ".local/v2/kaggle/output/defense-praxis/control_confirmation_evaluation.json": {
+      "sha256": "f627f0b7c6c950e79d7067e0b40a56446837fe28442f33dfd8dec95bffc92930",
+      "bytes": 49729
+    },
+    ".local/v2/kaggle/output/defense-praxis/v2_historical_evaluation.json": {
+      "sha256": "694e507969a42ce7b177fe6294d35e29b0973b4b0e1d0e30531076a424a37471",
+      "bytes": 61431
+    },
+    ".local/v2/kaggle/output/defense-praxis/v2_confirmation_evaluation.json": {
+      "sha256": "1dc2b4a24e2ba2767f49e0c4c20b1759e3ca547be3ff8e5fc6787e054f59f43d",
+      "bytes": 48955
+    },
+    ".local/kaggle/output/defense-praxis/baseline_evaluation.json": {
+      "sha256": "0a4fa63412d525ff74a21074660b5af840ca7c20dc31b6bc344752afb0156524",
+      "bytes": 6538
+    },
+    ".local/kaggle/output/defense-praxis/evaluation.json": {
+      "sha256": "0ebf442c2a35fcd001ae5433e1e5ee6daaf2f30ddd8fc476d8049e9b351c23f5",
+      "bytes": 6527
+    },
+    ".local/kaggle/output/defense-praxis/training_report.json": {
+      "sha256": "c1349b80ff97e01acd54c5f60b62680b4ff2797613899c38a1299d9808acab8c",
+      "bytes": 2186
+    },
+    ".local/v2/kaggle/output/defense-praxis/control_a/training_report.json": {
+      "sha256": "34285de206c2927ef09db1436d88e5f5305f9b9c6df1295f143974fe9f994601",
+      "bytes": 2719
+    },
+    ".local/v2/kaggle/output/defense-praxis/training_report.json": {
+      "sha256": "bff8f54ce2fc1aef146f6a805ed15d491dc58d6e7e700732865d0520dfbcb627",
+      "bytes": 2436
+    },
+    ".local/v3/kaggle/output/defense-praxis/control_c/training_report.json": {
+      "sha256": "356e4a23127ecde5a623cf28fcf2fc9c84e64d8b9f218fe129ae4ee6e8ec67c5",
+      "bytes": 2087
+    },
+    ".local/v3/kaggle/output/defense-praxis/training_report.json": {
+      "sha256": "47d99f585e84b0d3df905f40331076767ffee3222c1855f69507a85762defed8",
+      "bytes": 3156
+    },
+    ".local/prepared/data_manifest.json": {
+      "sha256": "af0e6fb26616737324540790e1797f5d6649ea3b64584aac7f4949d6a18bf836",
+      "bytes": 14777
+    },
+    ".local/v2/prepared/data_manifest.json": {
+      "sha256": "4ba6b292efec38e27ae6485a23a8440665e0b1bd9a2d9ea334da14549475ba83",
+      "bytes": 15982
+    },
+    ".local/v3/prepared/data_manifest.json": {
+      "sha256": "b5946ab7f641d2075cf1478e37a7b9ea74a9be0cf7e9339749fe7653f8f08a73",
+      "bytes": 21915
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/dense_fresh_predictions.jsonl": {
+      "sha256": "333108fa915bc1a0ddb134c08080ae59aa0275de1b4163bc72be14eb5bcb6978",
+      "bytes": 269453
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v1_historical_predictions.jsonl": {
+      "sha256": "b9a8f50e7bfb06af896c756d2804ab906e775e9155e9b00b661c205e37fe5768",
+      "bytes": 345815
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v1_confirmation_predictions.jsonl": {
+      "sha256": "b466a2dd1ffc87e75ed12cb5a245ba838c67ff0773255c60b95c3bdd05a44028",
+      "bytes": 172107
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v1_fresh_predictions.jsonl": {
+      "sha256": "8b260e2432bdf37f2859fa4a28d7f85e78866fe6814c154bdfd71c8c4e70b385",
+      "bytes": 288281
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/teacher_a_historical_predictions.jsonl": {
+      "sha256": "d9bb968262c5fa40e173373d01cb6387396102cc294eb410ed927eafa40e1529",
+      "bytes": 345742
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/teacher_a_confirmation_predictions.jsonl": {
+      "sha256": "db0addfbca425978f2829c49df0f452c22eee882d9344f155a9af8e85e462b32",
+      "bytes": 171947
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/teacher_a_fresh_predictions.jsonl": {
+      "sha256": "761a375f609b0f98c1b494e077f26983d1b202c032a52d0cbc4039bc1797abd7",
+      "bytes": 288017
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v2_historical_predictions.jsonl": {
+      "sha256": "92a1af66ec31199fbefe0072ce8cc2dd075bc078ba5fd3309c7def52a2e67682",
+      "bytes": 345849
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v2_confirmation_predictions.jsonl": {
+      "sha256": "b2a4b03028485b986c9599a548b0ba225c8c2c078cce2e8ba655ad882b246d49",
+      "bytes": 171909
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v2_fresh_predictions.jsonl": {
+      "sha256": "ec5b15eee34cb1b310518e4499af896a3547e11452ee93715cb53776474b48de",
+      "bytes": 288097
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/committee_historical_predictions.jsonl": {
+      "sha256": "fc737031805ab99dcdf65ce701863d771b7e266e5cab76bc04f15b4c90b877fc",
+      "bytes": 241434
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/committee_confirmation_predictions.jsonl": {
+      "sha256": "310105c1b447aecad461506719a78edfeadf7bc1bae3838bc7b7fa9a6c3ec845",
+      "bytes": 120155
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/committee_fresh_predictions.jsonl": {
+      "sha256": "d8653d55a49d7f720b84002725408221ef5fb7829902ccf346836a9dcaec15be",
+      "bytes": 201059
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/control_historical_predictions.jsonl": {
+      "sha256": "26952c1531283ec33a2a4d1850e524296ebbb5bdf7f6a07891d99e6d5f3764c7",
+      "bytes": 345199
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/control_confirmation_predictions.jsonl": {
+      "sha256": "5d13558e4e06e401728ff8b9df65c21bc9d4baf8084dd70b2d5226f2390cf804",
+      "bytes": 171651
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/control_fresh_predictions.jsonl": {
+      "sha256": "e1dff5f4f1b545430572cc2f5ece44d67a7f189a0f5b4f3b61b2fb46ac40bed3",
+      "bytes": 287619
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/control_development_predictions.jsonl": {
+      "sha256": "99f527e2e1dd3c22ab817821c26236c95a76f0f918207642a1bbc2a54e5bb2fa",
+      "bytes": 345672
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v3_historical_predictions.jsonl": {
+      "sha256": "a2d980ccf0dffaea05d32336eef0e55643c5e1ebb1e0590391294b26a3efd7f2",
+      "bytes": 346231
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v3_confirmation_predictions.jsonl": {
+      "sha256": "b7c6dbcdd922d24f0c16916e81f0aea9c39d689e21feb677410ef034b2b4b294",
+      "bytes": 172101
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v3_fresh_predictions.jsonl": {
+      "sha256": "841aae75e71b91e96079cabc78aa2c7a24fa82cc640b48539f64cde08c75f843",
+      "bytes": 288378
+    },
+    ".local/v3/kaggle/output/defense-praxis/diagnostics/v3_development_predictions.jsonl": {
+      "sha256": "72209f0921793a919857e03780d899730bd788a360fda530f7219c3e6af80b11",
+      "bytes": 346601
+    },
+    "src/decision_moe/model.py": {
+      "sha256": "265f03ceead1c373f97c4f781c3a32956fac6cf8a8632c4e06adb4fb3578f443",
+      "bytes": 13043
+    },
+    "src/decision_moe/julia.py": {
+      "sha256": "63e904ca5cb57a4dd517215e66b2313acd0253a804be214f9841022de8ce8598",
+      "bytes": 9962
+    },
+    "src/decision_moe/data.py": {
+      "sha256": "769f7b65590aa22f169bb74ebb7a2e94cde814f00b1ed541ad16a710b6dbdf5a",
+      "bytes": 10319
+    },
+    "src/decision_moe/distillation.py": {
+      "sha256": "ab1c41db72b5df5880fe04216b8feb411318c8a6dbd66a0d61b66c24a0c677de",
+      "bytes": 5102
+    },
+    "scripts/finetune.py": {
+      "sha256": "a34bf6776b1691e4d2bc0b7c107c2988247ce913566350d950407bd8105b3fed",
+      "bytes": 20981
+    },
+    "scripts/convert_julia.py": {
+      "sha256": "9217c3bccffccae58ed75f9d6254ff586395e13c518e4e4155a840656dd9002d",
+      "bytes": 3786
+    },
+    "scripts/prepare_gotham.py": {
+      "sha256": "80b6caf4be355122158e90a6141b4eb046386948f175f5beb6eeccadbf132971",
+      "bytes": 19859
+    },
+    "scripts/prepare_improvement.py": {
+      "sha256": "03797382d35e922de27a210a04f5bd4bffc0f5eb33b7ce9bf5dd596d20636cfd",
+      "bytes": 7360
+    },
+    "scripts/prepare_distillation.py": {
+      "sha256": "6fb00bdc622c105f9e83078c9477063d85275664d9bbfbd8bb39664f0a5b538f",
+      "bytes": 6306
+    },
+    "scripts/run_distillation.py": {
+      "sha256": "f4b5619a233fd4a60d20f5654bc775e4c6aca152b5ac6ae2d11121e709f255bd",
+      "bytes": 5189
+    },
+    "scripts/evaluate_gotham.py": {
+      "sha256": "95f42263d367a3cb4ae5e10ad2d8b167dd4bffdfe3638cec58334a4c8c6b15cf",
+      "bytes": 8619
+    },
+    "scripts/experiment_committee.py": {
+      "sha256": "f4d945bb6db992727b9b3b11c176e6be51bff0d83af8bfe90f29c1c145648ec3",
+      "bytes": 9259
+    }
+  }
+}

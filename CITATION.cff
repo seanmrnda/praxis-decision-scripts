@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying Praxis Decision paper when using this experiment code."
+type: software
+title: "Praxis Decision: Sparse Upcycling and Committee Distillation of Julia-1 for Typed Decisions — Reproduction Code"
+authors:
+  - family-names: Miranda
+    given-names: Sean Lester
+    email: contact@seanmiranda.com
+repository-code: "https://github.com/seanmrnda/praxis-decision-scripts"
+license: Apache-2.0

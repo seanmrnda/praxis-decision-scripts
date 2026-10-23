@@ -1,0 +1,6 @@
+# Install the CUDA build appropriate to your host separately; original was cu128.
+torch==2.10.0
+transformers==5.17.0
+safetensors>=0.5
+huggingface-hub>=1.0
+requests>=2.32

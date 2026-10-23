@@ -1,0 +1,166 @@
+{
+  "pyproject.toml": {
+    "archive": "v3-kaggle-code/pyproject.toml",
+    "original_sha256": "5805e60b6415c82323d6dcf2c4d333dbb2bb83847f22c4a03f9b7a6ae3c52584"
+  },
+  "requirements.txt": {
+    "archive": "v3-kaggle-code/requirements.txt",
+    "original_sha256": "109ded713c0137964a038d14ea47c7b125c009822a1e2dffa0b6fd460efcd1af"
+  },
+  "THIRD_PARTY_NOTICES.md": {
+    "archive": "v3-kaggle-code/THIRD_PARTY_NOTICES.md",
+    "original_sha256": "1d772b6c4c1e17ef40415edafe3004fd38c16db6fdfeffa3c0ae9b036fc9d805"
+  },
+  "licenses/Julia-1-Apache-2.0.txt": {
+    "archive": "v3-kaggle-code/licenses/Julia-1-Apache-2.0.txt",
+    "original_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "licenses/MAVEN-ERE-GPL-3.0.txt": {
+    "archive": "v3-kaggle-code/licenses/MAVEN-ERE-GPL-3.0.txt",
+    "original_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  "licenses/Re-DocRED-MIT.txt": {
+    "archive": "v3-kaggle-code/licenses/Re-DocRED-MIT.txt",
+    "original_sha256": "0a06d894a38e1948af6fb9e76e0415ecc7ec36dfe6c9fd5f21d470b1bb5714a5"
+  },
+  "src/decision_moe/__init__.py": {
+    "archive": "v3-kaggle-code/src/decision_moe/__init__.py",
+    "original_sha256": "f171bbd7329cf3ab539b8770ee8de9ec3ca84d61d3a371bbda6322caeccca6b5"
+  },
+  "src/decision_moe/data.py": {
+    "archive": "v3-kaggle-code/src/decision_moe/data.py",
+    "original_sha256": "2cf172ec5191823ec50ee567d59325a0deaca7eb766df0a45ad0bf2df969e847"
+  },
+  "src/decision_moe/distillation.py": {
+    "archive": "v3-kaggle-code/src/decision_moe/distillation.py",
+    "original_sha256": "5491a101021f1ff9b4b7468f0702d97f4197d2dc25519515dc5abfe9f535edca"
+  },
+  "src/decision_moe/julia.py": {
+    "archive": "v3-kaggle-code/src/decision_moe/julia.py",
+    "original_sha256": "63e904ca5cb57a4dd517215e66b2313acd0253a804be214f9841022de8ce8598"
+  },
+  "src/decision_moe/model.py": {
+    "archive": "v3-kaggle-code/src/decision_moe/model.py",
+    "original_sha256": "d85f367d93ca76377d75fac61f2debaa0b08cf340b31a3510856d5f91edd9fb1"
+  },
+  "scripts/convert_julia.py": {
+    "archive": "v3-kaggle-code/scripts/convert_julia.py",
+    "original_sha256": "9217c3bccffccae58ed75f9d6254ff586395e13c518e4e4155a840656dd9002d"
+  },
+  "scripts/finetune.py": {
+    "archive": "v3-kaggle-code/scripts/finetune.py",
+    "original_sha256": "4432cb78a50c10a4ea281e6aff629152ba65e773bcf64ec22b3a0c1667f1a78c"
+  },
+  "scripts/predict.py": {
+    "archive": "v3-kaggle-code/scripts/predict.py",
+    "original_sha256": "4256fe89edbb4db4a4ae7b17bf41642ddbff13e96a7850382f8c6d95edd6d352"
+  },
+  "scripts/download_gotham_sources.py": {
+    "archive": "v3-kaggle-code/scripts/download_gotham_sources.py",
+    "original_sha256": "7a339727a75123187d781d77c9104465511904505efddc50b54e410744464712"
+  },
+  "scripts/prepare_gotham.py": {
+    "archive": "v3-kaggle-code/scripts/prepare_gotham.py",
+    "original_sha256": "80b6caf4be355122158e90a6141b4eb046386948f175f5beb6eeccadbf132971"
+  },
+  "scripts/prepare_improvement.py": {
+    "archive": "v3-kaggle-code/scripts/prepare_improvement.py",
+    "original_sha256": "03797382d35e922de27a210a04f5bd4bffc0f5eb33b7ce9bf5dd596d20636cfd"
+  },
+  "scripts/prepare_distillation.py": {
+    "archive": "v3-kaggle-code/scripts/prepare_distillation.py",
+    "original_sha256": "6fb00bdc622c105f9e83078c9477063d85275664d9bbfbd8bb39664f0a5b538f"
+  },
+  "scripts/evaluate_gotham.py": {
+    "archive": "v3-kaggle-code/scripts/evaluate_gotham.py",
+    "original_sha256": "5b1e1c0d8adddd3dcbf5c02573fb1ac93b5b0d105e5406b3be8c19b1efcb9847"
+  },
+  "scripts/experiment_committee.py": {
+    "archive": "v3-kaggle-code/scripts/experiment_committee.py",
+    "original_sha256": "f4d945bb6db992727b9b3b11c176e6be51bff0d83af8bfe90f29c1c145648ec3"
+  },
+  "scripts/cache_teachers.py": {
+    "archive": "v3-kaggle-code/scripts/cache_teachers.py",
+    "original_sha256": "a228d0d6cfd9e90f9e186e145a53d04bb451b95db232a36ada701a3a14e8db09"
+  },
+  "scripts/distillation_results.py": {
+    "archive": "v3-kaggle-code/scripts/distillation_results.py",
+    "original_sha256": "a29b9053c84116d94d716eca94f0217581880978be4fe53c255a74ded94fd1e4"
+  },
+  "scripts/run_distillation.py": {
+    "archive": "v3-kaggle-code/scripts/run_distillation.py",
+    "original_sha256": "f4b5619a233fd4a60d20f5654bc775e4c6aca152b5ac6ae2d11121e709f255bd"
+  },
+  "historical/v1/src/decision_moe/__init__.py": {
+    "archive": "v1-kaggle-code/src/decision_moe/__init__.py",
+    "original_sha256": "f171bbd7329cf3ab539b8770ee8de9ec3ca84d61d3a371bbda6322caeccca6b5"
+  },
+  "historical/v1/src/decision_moe/data.py": {
+    "archive": "v1-kaggle-code/src/decision_moe/data.py",
+    "original_sha256": "2cf172ec5191823ec50ee567d59325a0deaca7eb766df0a45ad0bf2df969e847"
+  },
+  "historical/v1/src/decision_moe/julia.py": {
+    "archive": "v1-kaggle-code/src/decision_moe/julia.py",
+    "original_sha256": "63e904ca5cb57a4dd517215e66b2313acd0253a804be214f9841022de8ce8598"
+  },
+  "historical/v1/src/decision_moe/model.py": {
+    "archive": "v1-kaggle-code/src/decision_moe/model.py",
+    "original_sha256": "c8e42e1b3b5c38a543284cc1130a44cbe29cfab77cc15ded9ec79522fff6ae16"
+  },
+  "historical/v1/scripts/finetune.py": {
+    "archive": "v1-kaggle-code/scripts/finetune.py",
+    "original_sha256": "4ba1340c84e575275f78fb6083f374093a321b25e8f6837afe16307aca9d4635"
+  },
+  "historical/v1/scripts/convert_julia.py": {
+    "archive": "v1-kaggle-code/scripts/convert_julia.py",
+    "original_sha256": "9217c3bccffccae58ed75f9d6254ff586395e13c518e4e4155a840656dd9002d"
+  },
+  "historical/v1/scripts/evaluate_gotham.py": {
+    "archive": "v1-kaggle-code/scripts/evaluate_gotham.py",
+    "original_sha256": "1c3e7278a5e872940b1329aba7320766c2490a87cdfb71f7b66048b80a55c57d"
+  },
+  "historical/v2/scripts/finetune.py": {
+    "archive": "v2-kaggle-code/scripts/finetune.py",
+    "original_sha256": "4ba1340c84e575275f78fb6083f374093a321b25e8f6837afe16307aca9d4635"
+  },
+  "tests/test_model.py": {
+    "archive": "local-validation-tests/test_model.py",
+    "original_sha256": "74b99253ed62872ff50f31f3083c1034d1396c5aaee51a2fd5f095a18eec61d4"
+  },
+  "tests/test_pipeline.py": {
+    "archive": "local-validation-tests/test_pipeline.py",
+    "original_sha256": "e75a2c014772d1feb6eb4e0e3edb9c5bfb00e381f04ec44d0c288fc23e75ff77"
+  },
+  "tests/test_distillation.py": {
+    "archive": "local-validation-tests/test_distillation.py",
+    "original_sha256": "38f4a829239417061c38ed15d7fd4f016559b219d193949de216f8b79f6383c7"
+  },
+  "tests/test_gotham_data.py": {
+    "archive": "local-validation-tests/test_gotham_data.py",
+    "original_sha256": "197c20281c7a9914b3718c8ec38c5a312b82658f3337caac5e4a13afdfca2313"
+  },
+  "tests/test_improvement.py": {
+    "archive": "local-validation-tests/test_improvement.py",
+    "original_sha256": "7cbc3af91edfa050eba1304c46f23959d1bfd6afca6ef26bad2c93c5e1ed1817"
+  },
+  "tests/test_committee.py": {
+    "archive": "local-validation-tests/test_committee.py",
+    "original_sha256": "746f1dffa17c50fb264785bfdfeb4cc3b60f0c7a6cd47479712e5b9b405ce2f3"
+  },
+  "examples/calibration.jsonl": {
+    "archive": "local-examples/calibration.jsonl",
+    "original_sha256": "5e1ea0f7208545ae5ab4bd2d40be1243841dbb702e6210a89ee6b6baf6621977"
+  },
+  "examples/requests.jsonl": {
+    "archive": "local-examples/requests.jsonl",
+    "original_sha256": "45156468c95850c7ae1460f9c838ac3bfdf2fa23b188499b9bd7c08561b9b774"
+  },
+  "examples/train.jsonl": {
+    "archive": "local-examples/train.jsonl",
+    "original_sha256": "ba62c3522ce08ef7aafe2e3e2060a79fcd87135e927a4b425c552235459058f6"
+  },
+  "examples/validation.jsonl": {
+    "archive": "local-examples/validation.jsonl",
+    "original_sha256": "a501a52c9f08411441923a741b12bcfdfc288a69e5ff8c828eef46f1fd110447"
+  }
+}
