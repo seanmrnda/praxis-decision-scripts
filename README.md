@@ -2,7 +2,7 @@
 
 Code and instructions for **Praxis Decision: Sparse Upcycling and Committee Distillation of Julia-1 for Typed Decisions**, by **Sean Lester Miranda** ([contact@seanmiranda.com](mailto:contact@seanmiranda.com)).
 
-This repository reproduces the original Julia-1 → sparse MoE conversion and the v1, v2, and v3 experiments completed on September 28, 2026. Historical checkpoints and reports use `defense-praxis` names; the model family is **Praxis Decision**. Later experiments that also used “Praxis-v3,” and the Laya, v4, v5, and H/P runs, are outside this repository's scope.
+This repository reproduces the original Julia-1 → sparse MoE conversion and the v1, v2, and v3 experiments completed on September 28, 2026. Historical checkpoints and reports use `defense-praxis` names; the model family is **Praxis Decision**.
 
 The pipeline starts with public Julia-1 weights and downloads the public training sources. Access to the author's private checkpoints is **not required**. Model weights, dataset copies, credentials, and cloud-account automation are excluded from this source repository.
 
